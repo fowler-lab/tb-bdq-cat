@@ -4,6 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from protocols.Predict import predict
+from protocols.BuildCatalogue import BuildCatalogue
 from protocols import Helpers
 
 
@@ -349,10 +350,10 @@ def plot_catalogue_counts(all, catalogue):
     sns.set_context("notebook")
 
     genes_S, genes_R = [], []
-    for i in catalogue[catalogue.phenotype == "S"].index:
+    for i in catalogue[catalogue.PHENOTYPE == "S"].index:
         gene = all[all.GENE_MUT == catalogue["GENE_MUT"][i]].GENE.tolist()[0]
         genes_S.append(gene)
-    for i in catalogue[catalogue.phenotype == "R"].index:
+    for i in catalogue[catalogue.PHENOTYPE == "R"].index:
         gene = all[all.GENE_MUT == catalogue["GENE_MUT"][i]].GENE.tolist()[0]
         genes_R.append(gene)
     plt.figure(figsize=(7, 5))
@@ -370,3 +371,75 @@ def plot_catalogue_counts(all, catalogue):
     )
     plt.ylabel("Number of Catalogued Mutations")
 
+
+def plot_catalogue_counts_h(all, catalogue):
+    sns.set_context("notebook")
+
+    genes_S, genes_R = [], []
+    for i in catalogue[catalogue.PHENOTYPE == "S"].index:
+        gene = all[all.GENE_MUT == catalogue["MUTATION"][i]].GENE.tolist()[0]
+        genes_S.append(gene)
+    for i in catalogue[catalogue.PHENOTYPE == "R"].index:
+        gene = all[all.GENE_MUT == catalogue["MUTATION"][i]].GENE.tolist()[0]
+        genes_R.append(gene)
+
+    # Create a DataFrame with genes and phenotypes
+    df = pd.concat(
+        axis=0,
+        ignore_index=True,
+        objs=[
+            pd.DataFrame.from_dict({"Gene": genes_S, "phenotype": "S"}),
+            pd.DataFrame.from_dict({"Gene": genes_R, "phenotype": "R"}),
+        ],
+    ).sort_values(
+        ["Gene", "phenotype"], ascending=[True, True], key=lambda col: col.str.lower()
+    )
+
+    df_counts = (
+        df.groupby(["Gene", "phenotype"]).size().unstack(fill_value=0).reset_index()
+    )
+
+    gene_order = [
+        "Rv0678",
+        "pepQ",
+        "mmpS5",
+        "mmpL5",
+        "atpE",
+    ]
+
+    sns.set_palette("muted")
+
+    plt.figure(figsize=(13, 4))
+    ax = sns.barplot(
+        data=df_counts,
+        x="S",
+        y="Gene",
+        color=sns.color_palette()[2],
+        order=gene_order,
+        label="S",
+        edgecolor="black",
+    )
+    sns.barplot(
+        data=df_counts,
+        x="R",
+        y="Gene",
+        color=sns.color_palette()[0],
+        label="R",
+        order=gene_order,
+        ax=ax,
+        edgecolor="black",
+    )
+
+    for p in ax.patches:
+        width = p.get_width()
+        plt.annotate(
+            f"{width:.0f}",
+            (width + 2, p.get_y() + p.get_height() / 2),
+            ha="left",
+            va="center",
+        )
+
+    ax.set(xlabel="Number of catalogued mutations", ylabel="Genes")
+    ax.legend(title="Phenotype")
+
+    plt.show()
