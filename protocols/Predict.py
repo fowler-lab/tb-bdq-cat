@@ -176,6 +176,7 @@ def piezo_predict_cv(
         )
         isolate_cov.append(performance["isolate_cov"])
         specificities.append(performance["specificity"])
+        # just for the sake of plotting the bar charts - a nan would make plotting impossible
         sensitivities.append(performance["sensitivity"])
         cms.append(performance["cm"])
 
@@ -197,7 +198,7 @@ def piezo_predict_cv(
             labels[i].append("%s" % int(mean[i][j]))
 
     df_cm = pd.DataFrame(mean, index=["R", "S"], columns=["R", "S", "U"])
-    return df_cm, labels
+    return df_cm, labels, sensitivity, specificity, isolate_cov
 
 
 def predict_cv(

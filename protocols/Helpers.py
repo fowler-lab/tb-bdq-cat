@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from protocols.Predict import predict
 from protocols.BuildCatalogue import BuildCatalogue
 from protocols import Helpers
+import random
 
 
 DNA_Codons = {
@@ -442,4 +443,179 @@ def plot_catalogue_counts_h(all, catalogue):
     ax.set(xlabel="Number of catalogued mutations", ylabel="Genes")
     ax.legend(title="Phenotype")
 
+    plt.show()
+
+
+def plot_metrics(performance):
+    df = pd.DataFrame(performance, index=[0])
+
+    sns.set_theme("paper")
+    sns.set_style("white")
+
+    plt.figure(figsize=(7, 3))
+
+    ax = sns.barplot(df)
+
+    ax.set_ylabel("Metric Value (%)", fontsize=12)
+    ax.tick_params(axis="x", labelsize=12)
+    ax.tick_params(axis="y", labelsize=10)
+
+    for p in ax.patches:
+        ax.annotate(
+            f"{p.get_height():.2f}%",
+            (p.get_x() + p.get_width() / 2.0, p.get_height()),
+            ha="center",
+            va="center",
+            xytext=(0, 5),
+            textcoords="offset points",
+            fontsize=10,
+        )
+    ax.set_ylim(0, 100)
+
+    sns.despine()
+    plt.show()
+
+
+def plot_metrics_std(performance, stds):
+    df = pd.DataFrame(performance, index=[0])
+
+    sns.set_theme("paper")
+    sns.set_style("white")
+
+    plt.figure(figsize=(7, 3))
+
+    ax = sns.barplot(df)
+
+    for k, v in stds.items():
+        ax.errorbar(x=k, y=performance[k], yerr=v, color="black", zorder=10, capsize=3)
+
+    ax.set_ylabel("Metric Value (%)", fontsize=12)
+    ax.tick_params(axis="x", labelsize=12)
+    ax.tick_params(axis="y", labelsize=10)
+
+    for p in ax.patches:
+        ax.annotate(
+            f"{p.get_height():.2f}%",
+            (p.get_x() + p.get_width() / 2.0, p.get_height()),
+            ha="center",
+            va="center",
+            xytext=(0, 5),
+            textcoords="offset points",
+            fontsize=10,
+        )
+
+    ax.set_ylim(0, 100)
+
+    sns.despine()
+    plt.show()
+
+def mutation_mic_plot(df, ids, gene, ecoff, fig_size):
+    """Displays scatter plot of mutation vs MIC.
+    Args: mic_dict --> a dictionary of mic lists for each mutation"""
+
+    all_sha = df[df.UNIQUEID.isin(ids)]
+
+    all_sha = all_sha[all_sha.FRS >= 0.1]
+
+    solos, solo_ids = Helpers.extract_solos(gene, all_sha)
+
+    mut_counts = all_sha[["GENE", "MUTATION"]].value_counts().reset_index(name="count")
+
+    mic_dict = {}
+
+    for i in mut_counts[(mut_counts["count"] >= 3) & (mut_counts.GENE == gene)].index:
+        mic_dict[mut_counts["MUTATION"][i]] = all_sha[
+            (all_sha.GENE == gene)
+            & (all_sha.MUTATION == mut_counts["MUTATION"][i])
+            & (~all_sha.UNIQUEID.isin(solo_ids))
+        ].METHOD_MIC.tolist()
+
+    y_axis_keys = {0.125: 0, 0.25: 1, 0.5: 2, 1.0: 3, 2.0: 4, 4.0: 5, 8.0: 6}
+
+    values_array = np.array(
+        [0.06, 0.015, 0.008, 0.03, 0.25, 0.12, 0.5, 1.0, 2.0, 8.0, 4.0, 0.125]
+    )
+
+    # Create y_axis_keys dictionary
+    y_axis_keys = {
+        value: index
+        for index, value in enumerate(sorted(np.array(all_sha.MIC_FLOAT.unique())))
+    }
+
+    ordered_solos = {}
+    for k in mic_dict.keys():
+        if k in solos.keys():
+            ordered_solos[k] = solos[k]
+        else:
+            ordered_solos[k] = []
+
+    def prep_xy(dict):
+        x_axis_keys = {}
+        count = 0
+        for mut in dict.keys():
+            x_axis_keys[mut] = str(count)
+            count += 1
+
+        mic_dict_num = {}
+        for k, v in dict.items():
+            for i in range(len(v)):
+                try:
+                    v[i] = float(v[i])
+                except ValueError:
+                    try:
+                        v[i] = float(v[i][1:])
+                    except ValueError:
+                        v[i] = float(v[i][2:])
+            mic_dict_num[x_axis_keys[k]] = v
+
+        for k, v in mic_dict_num.items():
+            for i in range(len(v)):
+                v[i] = y_axis_keys[v[i]]
+
+        mic_rand_y = {}
+        for k, v in mic_dict_num.items():
+            mic_rand_y[k] = []
+            for i in v:
+                count = v.count(i)
+                if count > 1:
+                    rand = random.randrange(600) / 1000
+                    mic_rand_y[k].append(i - 0.3 + rand)
+                else:
+                    mic_rand_y[k].append(i)
+
+        x, y = [], []
+        for k, v in mic_rand_y.items():
+            v_rounded = [round(i, 0) for i in v]
+            for i in range(len(v_rounded)):
+                count = v_rounded.count(v_rounded[i])
+                if count > 1:
+                    rand = random.randrange(800) / 1000
+                    x.append(float(k) - 0.4 + rand)
+                else:
+                    x.append(float(k))
+                y.append(v[i])
+
+        return x, y, x_axis_keys, y_axis_keys
+
+    x, y, x_axis_keys, y_axis_keys = prep_xy(mic_dict)
+    x_solo, y_solo, _, _ = prep_xy(solos)
+
+    fig, ax = plt.subplots(1, 1)
+    fig.set_size_inches(fig_size[0], fig_size[1])
+    ax.scatter(x, y, c="white", edgecolor="blue")
+    ax.scatter(x_solo, y_solo, color="blue")
+    ax.set_xticks([int(i) for i in x_axis_keys.values()])
+    ax.set_xticklabels(x_axis_keys.keys(), rotation="vertical")
+    val = -0.5
+    for i in range(len(x_axis_keys)):
+        ax.axvline(val, color="black", lw=0.5)
+        val += 1
+    ax.set_xlim(-0.5, len(x_axis_keys) - 0.5)
+    ax.set_yticks([i for i in y_axis_keys.values()])
+    ax.set_yticklabels(y_axis_keys.keys())
+    ecoff = y_axis_keys[ecoff] + 0.5
+    ax.axhline(ecoff, color="black", lw=1)
+
+    ax.set_xlabel("Mutation")
+    ax.set_ylabel("MIC (mg/L)")
     plt.show()
