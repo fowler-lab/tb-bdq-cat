@@ -4,7 +4,6 @@ This repository contains all data used and all figures generated in the study to
 
 ---
 
-The results of the study can be found in the StudyResults.ipynb notebook, presented in a similar order and structure as in the paper.
 The results of the study can be found in the StudyResults_manuscript2.ipynb notebook, presented in a similar order and structure as in the paper.
 
 ---
