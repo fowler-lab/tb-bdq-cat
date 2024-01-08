@@ -146,6 +146,7 @@ def piezo_predict_cv(
     version,
     drug,
     wildcards,
+    path,
 ):
     X = all.UNIQUEID.unique()
 
@@ -169,10 +170,10 @@ def piezo_predict_cv(
 
         BuildCatalogue(train_samples, train_mutations, FRS).return_piezo(
             genbank_ref, catalogue_name, version, drug, wildcards
-        ).to_csv(f"./catalogues/cv/catalogue_FRS_{FRS}_cv.csv", index=False)
+        ).to_csv(f"{path}catalogue_FRS_{FRS}_cv.csv", index=False)
 
         performance = piezo_predict(
-            test_df, f"./catalogues/cv/catalogue_FRS_{FRS}_cv.csv", drug
+            test_df, f"{path}catalogue_FRS_{FRS}_cv.csv", drug
         )
         isolate_cov.append(performance["isolate_cov"])
         specificities.append(performance["specificity"])
