@@ -251,6 +251,36 @@ def RSVariantTable(df, genes):
 
     return pd.DataFrame.from_dict(table).T
 
+def CombinedDataTable(all):
+
+    df = RSIsolateTable(all, all.GENE.unique())
+    df1 = RSIsolateTable(all[all.FRS < 0.9], all.GENE.unique())
+    df2 = RSVariantTable(all, all.GENE.unique())
+    df3 = RSVariantTable(all[all.FRS < 0.9], all.GENE.unique())
+    df = pd.concat([df, df1, df2, df3], axis=1)
+
+    df.columns = pd.MultiIndex.from_tuples(
+    zip(
+        [
+            "All",
+            "",
+            "",
+            "Minor alleles",
+            "",
+            "",
+            "All",
+            "",
+            "",
+            "Minor alleles",
+            "",
+            "",
+        ],
+        df.columns,
+    )
+    )
+
+    return df
+
 
 def extract_solos(gene, df):
     solos, solo_ids = {}, []
@@ -366,11 +396,21 @@ def plot_catalogue_counts(all, catalogue):
             pd.DataFrame.from_dict({"Gene": genes_R, "phenotype": "R"}),
         ],
     ).sort_values(["Gene"], ascending=True, key=lambda col: col.str.lower())
-    fig, ax = plt.subplots()
+
+    # Count occurrences of each phenotype for each gene
+    counts = df.groupby(['Gene', 'phenotype']).size().reset_index(name='counts')
+
+    # Sort the counts dataframe
+    sorted_genes = counts.sort_values(by='counts', ascending=True)['Gene'].unique()
+
+    # Plotting
+    plt.figure(figsize=(7, 5))
     sns.histplot(
-        data=df, x="Gene", hue="phenotype", multiple="dodge", ax=ax, discrete=True
+        data=df, x="Gene", hue="phenotype", multiple="dodge", order=sorted_genes, discrete=True
     )
     plt.ylabel("Number of Catalogued Mutations")
+    plt.xticks(rotation=90)  # Rotate the x-axis labels for better readability if needed
+    plt.show()
 
 
 def plot_catalogue_counts_h(all, catalogue):
@@ -618,4 +658,74 @@ def mutation_mic_plot(df, ids, gene, ecoff, fig_size):
 
     ax.set_xlabel("Mutation")
     ax.set_ylabel("MIC (mg/L)")
+    plt.show()
+
+
+def FRS_vs_metric(df):
+    # Create a line plot using seaborn
+    data=df
+    plt.figure(figsize=(10, 5))
+    sns.lineplot(x="FRS", y="Sensitivity", data=data, label="Sensitivity", color="blue")
+    sns.lineplot(x="FRS", y="Specificity", data=data, label="Specificity", color="red")
+    sns.lineplot(x="FRS", y="Coverage", data=data, label="Isolate Coverage", color="green")
+
+    yticks = [
+        0,
+        20,
+        40,
+        60,
+        80,
+        100,
+    ]  
+    xticks = [
+        0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+    ]  
+
+    plt.yticks(yticks)
+    plt.xticks(xticks)
+
+    # Add labels and legend
+    plt.xlabel("Fraction Read Support (FRS)")
+    plt.ylabel("Metric Value (%)")
+    plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.65))
+
+    # Add final values at the end of each line
+    for line in plt.gca().lines[:-1]:
+        print (line.get_label())
+        x_data = line.get_xdata()
+        y_data = line.get_ydata()
+        final_value = y_data[-1]
+        plt.annotate(
+            f"~{final_value:.2f}",
+            (x_data[-1], final_value),
+            textcoords="offset points",
+            xytext=(25, -3),
+            ha="center",
+        )
+
+
+    plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
+    plt.text(0.76, 30, "WHO build threshold", color="gray", ha="left", va="top")
+
+    plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
+    plt.text(0.26, 30, "WHO evaluation threshold", color="gray", ha="left", va="top")
+
+    plt.axvline(x=0.1, color="gray", linestyle="--", label="FRS=0.1")
+    plt.text(0.11, 30, "Our", color="gray", ha="left", va="top")
+    plt.text(0.11, 24, "threshold", color="gray", ha="left", va="top")
+
+    sns.despine(top=True, right=True)
+    plt.grid(False)
+
+    # Show the plot
     plt.show()
