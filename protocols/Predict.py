@@ -73,7 +73,7 @@ def predict(iso_df, catalogue, U_to_R=False, Print=True):
     }
 
 
-def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, Print=True):
+def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Print=True):
     catalogue = piezo.ResistanceCatalogue(catalogue_file)
 
     ids = iso_df.UNIQUEID.unique().tolist()
@@ -96,6 +96,8 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, Print=True):
             if "U" in mut_predictions:
                 if U_to_R:
                     predictions.append("R")
+                elif U_to_S:
+                    predictions.append("S")
                 else:
                     predictions.append("U")
             else:
@@ -112,25 +114,20 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, Print=True):
         cm = cm[:2][:2]
     else:
         cm = cm[:2]
-    if print:
+    if Print:
         print(cm)
 
     sensitivity = cm[0][0] / (cm[0][0] + cm[0][1])
     specificity = cm[1][1] / (cm[1][1] + cm[1][0])
     isolate_cov = (len(labels) - predictions.count("U")) / len(labels)
 
-    if print:
+    if Print:
         print("Catalogue coverage of isolates:", isolate_cov)
         print("Sensitivity:", sensitivity)
         print("Specificity:", specificity)
 
-    return {
-        "cm": cm,
-        "isolate_cov": isolate_cov,
-        "sensitivity": sensitivity,
-        "specificity": specificity,
-        "FN_ids": FN_id,
-    }
+    return [cm, isolate_cov, sensitivity, specificity, FN_id]
+
 
 
 def piezo_predict_cv(
