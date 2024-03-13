@@ -124,6 +124,24 @@ def parse_vcf(vcf_file, gene, database):
     return df
 
 
+def FilterMultiplePhenos(group):
+    """
+    If a sample contains more than 1 phenotype,
+    keep the resistant phenotype (preferably with MIC) if there is one.
+    """
+    if len(group) == 1:
+        return group
+
+    # Prioritize rows with 'R' phenotype
+    prioritized_group = (
+        group[group["PHENOTYPE"] == "R"] if "R" in group["PHENOTYPE"].values else group
+    )
+
+    # Check for rows with METHOD_MIC values
+    with_mic = prioritized_group.dropna(subset=["METHOD_MIC"])
+    return with_mic.iloc[0:1] if not with_mic.empty else prioritized_group.iloc[0:1]
+
+
 def mic_to_float(arr):
     float_mic = []
     for i in arr:
@@ -251,8 +269,8 @@ def RSVariantTable(df, genes):
 
     return pd.DataFrame.from_dict(table).T
 
-def CombinedDataTable(all):
 
+def CombinedDataTable(all):
     df = RSIsolateTable(all, all.GENE.unique())
     df1 = RSIsolateTable(all[all.FRS < 0.9], all.GENE.unique())
     df2 = RSVariantTable(all, all.GENE.unique())
@@ -260,23 +278,23 @@ def CombinedDataTable(all):
     df = pd.concat([df, df1, df2, df3], axis=1)
 
     df.columns = pd.MultiIndex.from_tuples(
-    zip(
-        [
-            "All",
-            "",
-            "",
-            "Minor alleles",
-            "",
-            "",
-            "All",
-            "",
-            "",
-            "Minor alleles",
-            "",
-            "",
-        ],
-        df.columns,
-    )
+        zip(
+            [
+                "All",
+                "",
+                "",
+                "Minor alleles",
+                "",
+                "",
+                "All",
+                "",
+                "",
+                "Minor alleles",
+                "",
+                "",
+            ],
+            df.columns,
+        )
     )
 
     return df
@@ -381,10 +399,10 @@ def plot_catalogue_counts(all, catalogue):
     sns.set_context("notebook")
 
     genes_S, genes_R = [], []
-    for i in catalogue[catalogue.PHENOTYPE == "S"].index:
+    for i in catalogue[catalogue.PREDICTION == "S"].index:
         gene = all[all.GENE_MUT == catalogue["GENE_MUT"][i]].GENE.tolist()[0]
         genes_S.append(gene)
-    for i in catalogue[catalogue.PHENOTYPE == "R"].index:
+    for i in catalogue[catalogue.PREDICTION == "R"].index:
         gene = all[all.GENE_MUT == catalogue["GENE_MUT"][i]].GENE.tolist()[0]
         genes_R.append(gene)
     plt.figure(figsize=(7, 5))
@@ -398,18 +416,29 @@ def plot_catalogue_counts(all, catalogue):
     ).sort_values(["Gene"], ascending=True, key=lambda col: col.str.lower())
 
     # Count occurrences of each phenotype for each gene
-    counts = df.groupby(['Gene', 'phenotype']).size().reset_index(name='counts')
+    counts = df.groupby(["Gene", "phenotype"]).size().reset_index(name="counts")
 
     # Sort the counts dataframe
-    sorted_genes = counts.sort_values(by='counts', ascending=True)['Gene'].unique()
+    sorted_genes = counts.sort_values(by="counts", ascending=True)["Gene"].unique()
 
     # Plotting
     plt.figure(figsize=(7, 5))
-    sns.histplot(
-        data=df, x="Gene", hue="phenotype", multiple="dodge", order=sorted_genes, discrete=True
+    ax = sns.histplot(
+        data=df,
+        x="Gene",
+        hue="phenotype",
+        multiple="dodge",
+        order=sorted_genes,
+        discrete=True,
     )
     plt.ylabel("Number of Catalogued Mutations")
+    sns.despine()
     plt.xticks(rotation=90)  # Rotate the x-axis labels for better readability if needed
+
+    # Accessing and modifying the legend to remove the bounding box
+    legend = ax.legend()
+    legend.set_frame_on(False)
+
     plt.show()
 
 
@@ -417,10 +446,10 @@ def plot_catalogue_counts_h(all, catalogue):
     sns.set_context("notebook")
 
     genes_S, genes_R = [], []
-    for i in catalogue[catalogue.PHENOTYPE == "S"].index:
+    for i in catalogue[catalogue.PREDICTION == "S"].index:
         gene = all[all.GENE_MUT == catalogue["MUTATION"][i]].GENE.tolist()[0]
         genes_S.append(gene)
-    for i in catalogue[catalogue.PHENOTYPE == "R"].index:
+    for i in catalogue[catalogue.PREDICTION == "R"].index:
         gene = all[all.GENE_MUT == catalogue["MUTATION"][i]].GENE.tolist()[0]
         genes_R.append(gene)
 
@@ -450,26 +479,32 @@ def plot_catalogue_counts_h(all, catalogue):
 
     sns.set_palette("muted")
 
-    plt.figure(figsize=(13, 4))
+    plt.figure(figsize=(16, 3))
     ax = sns.barplot(
-        data=df_counts,
-        x="S",
-        y="Gene",
-        color=sns.color_palette()[2],
-        order=gene_order,
-        label="S",
-        edgecolor="black",
-    )
-    sns.barplot(
         data=df_counts,
         x="R",
         y="Gene",
-        color=sns.color_palette()[0],
+        color="#1b9e77",
         label="R",
         order=gene_order,
-        ax=ax,
         edgecolor="black",
+                alpha=0.7
+
     )
+    sns.barplot(
+        data=df_counts,
+        x="S",
+        y="Gene",
+        color="#7570b3",
+        ax=ax,
+        order=gene_order,
+        label="S",
+        edgecolor="black",
+        alpha=0.6
+
+        
+    )
+
 
     for p in ax.patches:
         width = p.get_width()
@@ -481,9 +516,12 @@ def plot_catalogue_counts_h(all, catalogue):
         )
 
     ax.set(xlabel="Number of catalogued mutations", ylabel="Genes")
-    ax.legend(title="Phenotype")
+    ax.legend(title="Phenotype").set_frame_on(False)
+
+    sns.despine()
 
     plt.show()
+
 
 
 def plot_metrics(performance):
@@ -514,6 +552,81 @@ def plot_metrics(performance):
 
     sns.despine()
     plt.show()
+
+
+def compare_metrics(performance_comparison):
+    df = (
+        pd.DataFrame(performance_comparison)
+        .T.reset_index()
+        .melt(id_vars="index", var_name="Metric", value_name="Value")
+    )
+    df.rename(columns={"index": "Dataset"}, inplace=True)
+
+    sns.set_theme(style="white")
+    plt.figure(figsize=(7, 3))
+
+    ax = sns.barplot(x="Metric", y="Value", hue="Dataset", data=df, palette=["#1b9e77", "#7570b3"])
+
+    ax.set_ylabel("Metric Value (%)", fontsize=12)
+    ax.set_xlabel("Metric", fontsize=12)
+    ax.tick_params(axis="x", labelsize=12)
+    ax.tick_params(axis="y", labelsize=10)
+
+    for p in ax.patches:
+        ax.annotate(
+            f"{p.get_height():.2f}%",
+            (p.get_x() + p.get_width() / 2.0, p.get_height()),
+            ha="center",
+            va="center",
+            fontsize=10,
+            color="black",
+            xytext=(0, 10),
+            textcoords="offset points",
+        )
+
+    ax.set_ylim(0, 100)
+    ax.legend(fontsize="small", title_fontsize="small", frameon=False)
+
+    sns.despine()
+    plt.tight_layout()
+    plt.show()
+
+def compare_metrics_2charts(performance):
+    sns.set_theme(style="white")
+    fig, axes = plt.subplots(1, 2, figsize=(14, 3))  # Create subplots for two charts
+
+    for i, frs_value in enumerate(performance.keys()):
+        df = pd.DataFrame(performance[frs_value]).T.reset_index().melt(id_vars="index", var_name="Metric", value_name="Value")
+        df.rename(columns={"index": "Dataset"}, inplace=True)
+
+        ax = sns.barplot(x="Metric", y="Value", hue="Dataset", data=df, palette=["#1b9e77", "#7570b3"], ax=axes[i])
+
+        ax.set_ylabel("Metric Value (%)", fontsize=12)
+        ax.set_xlabel("Metric", fontsize=12)
+        ax.tick_params(axis="x", labelsize=12)
+        ax.tick_params(axis="y", labelsize=10)
+
+        for p in ax.patches:
+            ax.annotate(
+                f"{p.get_height():.2f}%",
+                (p.get_x() + p.get_width() / 2.0, p.get_height()),
+                ha="center",
+                va="center",
+                fontsize=10,
+                color="black",
+                xytext=(0, 10),
+                textcoords="offset points",
+            )
+
+        ax.set_ylim(0, 100)
+        ax.set_title(f"FRS {frs_value}", fontsize=14)  # Set title for each subplot
+        ax.legend(fontsize="small", title_fontsize="small", frameon=False)
+
+    sns.despine()
+    plt.tight_layout()
+    plt.show()
+
+
 
 
 def plot_metrics_std(performance, stds):
@@ -548,6 +661,7 @@ def plot_metrics_std(performance, stds):
 
     sns.despine()
     plt.show()
+
 
 def mutation_mic_plot(df, ids, gene, ecoff, fig_size):
     """Displays scatter plot of mutation vs MIC.
@@ -661,13 +775,16 @@ def mutation_mic_plot(df, ids, gene, ecoff, fig_size):
     plt.show()
 
 
-def FRS_vs_metric(df):
+def FRS_vs_metric(df, cov=True):
     # Create a line plot using seaborn
-    data=df
-    plt.figure(figsize=(10, 5))
+    data = df
+    plt.figure(figsize=(8, 4))
     sns.lineplot(x="FRS", y="Sensitivity", data=data, label="Sensitivity", color="blue")
     sns.lineplot(x="FRS", y="Specificity", data=data, label="Specificity", color="red")
-    sns.lineplot(x="FRS", y="Coverage", data=data, label="Isolate Coverage", color="green")
+    if cov:
+        sns.lineplot(
+            x="FRS", y="Coverage", data=data, label="Isolate Coverage", color="green"
+        )
 
     yticks = [
         0,
@@ -676,7 +793,7 @@ def FRS_vs_metric(df):
         60,
         80,
         100,
-    ]  
+    ]
     xticks = [
         0,
         0.1,
@@ -689,43 +806,40 @@ def FRS_vs_metric(df):
         0.8,
         0.9,
         1.0,
-    ]  
+    ]
 
     plt.yticks(yticks)
     plt.xticks(xticks)
 
     # Add labels and legend
     plt.xlabel("Fraction Read Support (FRS)")
-    plt.ylabel("Metric Value (%)")
-    plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.65))
+    plt.ylabel("Metric (%)")
+    plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.80))
 
     # Add final values at the end of each line
-    for line in plt.gca().lines[:-1]:
-        print (line.get_label())
+    # for line in plt.gca().lines[:-1]:
+    for line in plt.gca().lines:
         x_data = line.get_xdata()
         y_data = line.get_ydata()
+        start_value = y_data[0]
         final_value = y_data[-1]
-        plt.annotate(
-            f"~{final_value:.2f}",
-            (x_data[-1], final_value),
-            textcoords="offset points",
-            xytext=(25, -3),
-            ha="center",
-        )
-
+        # Annotate the start value
+        plt.annotate(f"~{start_value:.2f}", (x_data[0], start_value), textcoords="offset points", xytext=(-23, -3), ha="center")
+        # Annotate the end value
+        plt.annotate(f"~{final_value:.2f}", (x_data[-1], final_value), textcoords="offset points", xytext=(25, -3), ha="center")
 
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
-    plt.text(0.76, 30, "WHO build threshold", color="gray", ha="left", va="top")
+    plt.text(0.68, 30, "WHO build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
-    plt.text(0.26, 30, "WHO evaluation threshold", color="gray", ha="left", va="top")
+    plt.text(0.23, 30, "WHO evaluation threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.1, color="gray", linestyle="--", label="FRS=0.1")
-    plt.text(0.11, 30, "Our", color="gray", ha="left", va="top")
-    plt.text(0.11, 24, "threshold", color="gray", ha="left", va="top")
+    plt.text(0.05, 30, "Our threshold", color="gray", ha="left", va="top")
 
     sns.despine(top=True, right=True)
     plt.grid(False)
 
     # Show the plot
+    plt.ylim(40, 100)
     plt.show()

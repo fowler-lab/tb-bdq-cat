@@ -169,14 +169,14 @@ def piezo_predict_cv(
             genbank_ref, catalogue_name, version, drug, wildcards
         ).to_csv(f"{path}catalogue_FRS_{FRS}_cv.csv", index=False)
 
-        performance = piezo_predict(
+        cm, _cov, _sens, _spec, _FN_ids= piezo_predict(
             test_df, f"{path}catalogue_FRS_{FRS}_cv.csv", drug
         )
-        isolate_cov.append(performance["isolate_cov"])
-        specificities.append(performance["specificity"])
+        isolate_cov.append(_cov)
+        specificities.append(_spec)
         # just for the sake of plotting the bar charts - a nan would make plotting impossible
-        sensitivities.append(performance["sensitivity"])
-        cms.append(performance["cm"])
+        sensitivities.append(_sens)
+        cms.append(cm)
 
     isolate_cov = (np.mean(isolate_cov), np.std(isolate_cov))
     specificity = (np.mean(specificities), np.std(specificities))
