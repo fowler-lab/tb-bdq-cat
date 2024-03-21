@@ -165,9 +165,9 @@ def piezo_predict_cv(
         train_mutations = mutations[mutations.UNIQUEID.isin(train_ids)]
         test_df = all[all.UNIQUEID.isin(test_ids)]
 
-        BuildCatalogue(train_samples, train_mutations, FRS).return_piezo(
+        BuildCatalogue(train_samples, train_mutations, FRS).build_piezo(
             genbank_ref, catalogue_name, version, drug, wildcards
-        ).to_csv(f"{path}catalogue_FRS_{FRS}_cv.csv", index=False)
+        ).return_piezo().to_csv(f"{path}catalogue_FRS_{FRS}_cv.csv", index=False)
 
         cm, _cov, _sens, _spec, _FN_ids= piezo_predict(
             test_df, f"{path}catalogue_FRS_{FRS}_cv.csv", drug
