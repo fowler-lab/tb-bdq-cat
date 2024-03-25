@@ -123,14 +123,14 @@ class BuildCatalogue:
             S_count_no_mut,
             [[R_count, S_count], [R_count_no_mut, S_count_no_mut]],
         )
-    
 
     def fisher_binary(self, solos, mut):
         # Build contingency table
         R_count, S_count, R_count_no_mut, S_count_no_mut, data = self.build_contigency(solos, mut)
+        # Run Fishers exact
         _, p_value = stats.fisher_exact(data)
 
-        # Determine prediction based on mutation's presence and significance level
+        # Determine prediction based on significance and effect direction
         phenotype = solos[solos.GENE_MUT == mut].PHENOTYPE
         if phenotype.nunique() == 1:
             prediction = "R" if R_count > S_count else "S"
