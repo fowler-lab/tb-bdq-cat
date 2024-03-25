@@ -814,7 +814,7 @@ def FRS_vs_metric(df, cov=True):
     # Add labels and legend
     plt.xlabel("Fraction Read Support (FRS)")
     plt.ylabel("Metric (%)")
-    plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.80))
+    plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.40))
 
     # Add final values at the end of each line
     # for line in plt.gca().lines[:-1]:
@@ -829,13 +829,11 @@ def FRS_vs_metric(df, cov=True):
         plt.annotate(f"~{final_value:.2f}", (x_data[-1], final_value), textcoords="offset points", xytext=(25, -3), ha="center")
 
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
-    plt.text(0.68, 30, "WHO build threshold", color="gray", ha="left", va="top")
+    plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
-    plt.text(0.23, 30, "WHO evaluation threshold", color="gray", ha="left", va="top")
+    plt.text(0.23, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
 
-    plt.axvline(x=0.1, color="gray", linestyle="--", label="FRS=0.1")
-    plt.text(0.05, 30, "Our threshold", color="gray", ha="left", va="top")
 
     sns.despine(top=True, right=True)
     plt.grid(False)
