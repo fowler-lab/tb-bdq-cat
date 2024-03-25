@@ -123,46 +123,32 @@ class BuildCatalogue:
             S_count_no_mut,
             [[R_count, S_count], [R_count_no_mut, S_count_no_mut]],
         )
+    
 
     def fisher_binary(self, solos, mut):
-
-        # build contingency table ((R count, S count), (background R count, background S count))
-
-        R_count, S_count, R_count_no_mut, S_count_no_mut, data = self.build_contigency(
-            solos, mut
-        )
-
+        # Build contingency table
+        R_count, S_count, R_count_no_mut, S_count_no_mut, data = self.build_contigency(solos, mut)
         _, p_value = stats.fisher_exact(data)
 
-        if p_value < 0.05 or solos[solos.GENE_MUT == mut].PHENOTYPE.nunique() == 1:
-            # if variant frequency is 1 simply call the phenotype, otherwise call phenotype at 95% confidence
-            if R_count > S_count:
-                return {
-                    "pred": "R",
-                    "evid": [
-                        [R_count, S_count],
-                        [R_count_no_mut, S_count_no_mut],
-                        [p_value, _],
-                    ],
-                }
-            else:
-                return {
-                    "pred": "S",
-                    "evid": [
-                        [R_count, S_count],
-                        [R_count_no_mut, S_count_no_mut],
-                        [p_value, _],
-                    ],
-                }
+        # Determine prediction based on mutation's presence and significance level
+        phenotype = solos[solos.GENE_MUT == mut].PHENOTYPE
+        if phenotype.nunique() == 1:
+            prediction = "R" if R_count > S_count else "S"
+        elif p_value < 0.05:
+            OR = (R_count * S_count_no_mut) / (S_count * R_count_no_mut)
+            prediction = "R" if OR > 1 else "S"
+            _ = OR
         else:
-            return {
-                "pred": "U",
-                "evid": [
-                    [R_count, S_count],
-                    [R_count_no_mut, S_count_no_mut],
-                    [p_value, _],
-                ],
-            }
+            prediction = "U"
+
+        # Evidence structure
+        evidence = [
+            [R_count, S_count],
+            [R_count_no_mut, S_count_no_mut],
+            [p_value, _]
+        ]
+
+        return {"pred": prediction, "evid": evidence}
 
     def return_catalogue(self):
         return {
@@ -214,7 +200,6 @@ class BuildCatalogue:
         data = aggregates if aggregates else self.catalogue
 
         data = BuildCatalogue.insert_wildcards(data, self.wildcards)
-
 
         piezo = (
             pd.DataFrame.from_dict(data, orient="index")
