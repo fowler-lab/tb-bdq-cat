@@ -1,6 +1,5 @@
 from sklearn.metrics import confusion_matrix
 
-from mglearn.tools import heatmap
 import matplotlib.pyplot as plt
 from sklearn.model_selection import ShuffleSplit
 import numpy as np
@@ -129,7 +128,6 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
     return [cm, isolate_cov, sensitivity, specificity, FN_id]
 
 
-
 def piezo_predict_cv(
     all,
     samples,
@@ -169,7 +167,7 @@ def piezo_predict_cv(
             genbank_ref, catalogue_name, version, drug, wildcards
         ).return_piezo().to_csv(f"{path}catalogue_FRS_{FRS}_cv.csv", index=False)
 
-        cm, _cov, _sens, _spec, _FN_ids= piezo_predict(
+        cm, _cov, _sens, _spec, _FN_ids = piezo_predict(
             test_df, f"{path}catalogue_FRS_{FRS}_cv.csv", drug
         )
         isolate_cov.append(_cov)
