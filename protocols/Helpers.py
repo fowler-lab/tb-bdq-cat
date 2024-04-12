@@ -488,8 +488,7 @@ def plot_catalogue_counts_h(all, catalogue):
         label="R",
         order=gene_order,
         edgecolor="black",
-                alpha=0.7
-
+        alpha=0.7,
     )
     sns.barplot(
         data=df_counts,
@@ -500,11 +499,8 @@ def plot_catalogue_counts_h(all, catalogue):
         order=gene_order,
         label="S",
         edgecolor="black",
-        alpha=0.6
-
-        
+        alpha=0.6,
     )
-
 
     for p in ax.patches:
         width = p.get_width()
@@ -521,7 +517,6 @@ def plot_catalogue_counts_h(all, catalogue):
     sns.despine()
 
     plt.show()
-
 
 
 def plot_metrics(performance):
@@ -565,7 +560,9 @@ def compare_metrics(performance_comparison):
     sns.set_theme(style="white")
     plt.figure(figsize=(7, 3))
 
-    ax = sns.barplot(x="Metric", y="Value", hue="Dataset", data=df, palette=["#1b9e77", "#7570b3"])
+    ax = sns.barplot(
+        x="Metric", y="Value", hue="Dataset", data=df, palette=["#1b9e77", "#7570b3"]
+    )
 
     ax.set_ylabel("Metric Value (%)", fontsize=12)
     ax.set_xlabel("Metric", fontsize=12)
@@ -591,15 +588,27 @@ def compare_metrics(performance_comparison):
     plt.tight_layout()
     plt.show()
 
+
 def compare_metrics_2charts(performance):
     sns.set_theme(style="white")
     fig, axes = plt.subplots(1, 2, figsize=(14, 3))  # Create subplots for two charts
 
     for i, frs_value in enumerate(performance.keys()):
-        df = pd.DataFrame(performance[frs_value]).T.reset_index().melt(id_vars="index", var_name="Metric", value_name="Value")
+        df = (
+            pd.DataFrame(performance[frs_value])
+            .T.reset_index()
+            .melt(id_vars="index", var_name="Metric", value_name="Value")
+        )
         df.rename(columns={"index": "Dataset"}, inplace=True)
 
-        ax = sns.barplot(x="Metric", y="Value", hue="Dataset", data=df, palette=["#1b9e77", "#7570b3"], ax=axes[i])
+        ax = sns.barplot(
+            x="Metric",
+            y="Value",
+            hue="Dataset",
+            data=df,
+            palette=["#1b9e77", "#7570b3"],
+            ax=axes[i],
+        )
 
         ax.set_ylabel("Metric Value (%)", fontsize=12)
         ax.set_xlabel("Metric", fontsize=12)
@@ -625,8 +634,6 @@ def compare_metrics_2charts(performance):
     sns.despine()
     plt.tight_layout()
     plt.show()
-
-
 
 
 def plot_metrics_std(performance, stds):
@@ -824,16 +831,27 @@ def FRS_vs_metric(df, cov=True):
         start_value = y_data[0]
         final_value = y_data[-1]
         # Annotate the start value
-        plt.annotate(f"~{start_value:.2f}", (x_data[0], start_value), textcoords="offset points", xytext=(-23, -3), ha="center")
+        plt.annotate(
+            f"~{start_value:.2f}",
+            (x_data[0], start_value),
+            textcoords="offset points",
+            xytext=(-23, -3),
+            ha="center",
+        )
         # Annotate the end value
-        plt.annotate(f"~{final_value:.2f}", (x_data[-1], final_value), textcoords="offset points", xytext=(25, -3), ha="center")
+        plt.annotate(
+            f"~{final_value:.2f}",
+            (x_data[-1], final_value),
+            textcoords="offset points",
+            xytext=(25, -3),
+            ha="center",
+        )
 
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
     plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
     plt.text(0.23, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
-
 
     sns.despine(top=True, right=True)
     plt.grid(False)
