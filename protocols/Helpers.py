@@ -8,6 +8,8 @@ from protocols.BuildCatalogue import BuildCatalogue
 from protocols import Helpers
 import random
 
+import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 
 DNA_Codons = {
     # 'M' - START, '_' - STOP
@@ -558,20 +560,20 @@ def compare_metrics(performance_comparison):
     df.rename(columns={"index": "Dataset"}, inplace=True)
 
     sns.set_theme(style="white")
-    plt.figure(figsize=(7, 3))
+    plt.figure(figsize=(4, 3))
 
     ax = sns.barplot(
         x="Metric", y="Value", hue="Dataset", data=df, palette=["#1b9e77", "#7570b3"]
     )
 
-    ax.set_ylabel("Metric Value (%)", fontsize=12)
-    ax.set_xlabel("Metric", fontsize=12)
-    ax.tick_params(axis="x", labelsize=12)
-    ax.tick_params(axis="y", labelsize=10)
+    ax.set_ylabel("Value (%)")  # , fontsize=7)
+    ax.set_xlabel("Metric")  # , fontsize=7)
+    # ax.tick_params(axis="x", labelsize=7)
+    # ax.tick_params(axis="y", labelsize=7)
 
     for p in ax.patches:
         ax.annotate(
-            f"{p.get_height():.2f}%",
+            f"{p.get_height():.1f}%",
             (p.get_x() + p.get_width() / 2.0, p.get_height()),
             ha="center",
             va="center",
@@ -859,3 +861,27 @@ def FRS_vs_metric(df, cov=True):
     # Show the plot
     plt.ylim(40, 100)
     plt.show()
+
+
+def plot_truthtables(truth_table, filestem):
+
+    fig = plt.figure(figsize=(1.5, 1.5))
+    axes = plt.gca()
+
+    axes.add_patch(Rectangle((0, 0), 1, 1, fc="#e41a1c", alpha=0.7))
+    axes.add_patch(Rectangle((1, 0), 1, 1, fc="#4daf4a", alpha=0.7))
+    axes.add_patch(Rectangle((1, 1), 1, 1, fc="#fc9272", alpha=0.7))
+    axes.add_patch(Rectangle((0, 1), 1, 1, fc="#4daf4a", alpha=0.7))
+
+    axes.set_xlim([0, 2])
+    axes.set_ylim([0, 2])
+
+    axes.set_xticks([0.5, 1.5], labels=["S+U", "R"])
+    axes.set_yticks([0.5, 1.5], labels=["R", "S"])
+
+    axes.text(1.5, 0.5, int(truth_table["R"]["R"]), ha="center", va="center")
+    axes.text(1.5, 1.5, int(truth_table["R"]["S"]), ha="center", va="center")
+    axes.text(0.5, 1.5, int(truth_table["S"]["S"]), ha="center", va="center")
+    axes.text(0.5, 0.5, int(truth_table["S"]["R"]), ha="center", va="center")
+
+    # fig.savefig('pdf/'+filestem + row.quality.lower()+ '-'+row.drug+'.pdf', bbox_inches='tight', transparent=True)
