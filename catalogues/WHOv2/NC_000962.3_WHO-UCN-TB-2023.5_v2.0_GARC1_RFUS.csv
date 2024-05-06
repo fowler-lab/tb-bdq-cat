@@ -223,6 +223,13 @@ NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@2559_ins_gaggat,S,{},
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@2562_ins_gacgaa,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 42, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 42}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""rpoB_p.Asp853_Glu854dup""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@I925V,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 70, ""Present_SOLO_R"": 1, ""Present_SOLO_S"": 69}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""rpoB_p.Ile925Val""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@K944E,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""rpoB_p.Lys944Glu""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@I948V,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 5468, ""Present_SOLO_R"": 55, ""Present_SOLO_S"": 5413}, ""Additional grading criteria applied"": ""Literature evidence (PMID 28031270; 34503982)"", ""FINAL CONFIDENCE GRADING"": ""4) Not assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Ile948Val""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@I948V,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 50, ""Present_SOLO_R"": 1, ""Present_SOLO_S"": 49}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Ile948Val""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@T794I,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 4, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 4}, ""Additional grading criteria applied"": ""Literature evidence (PMID 28031270; 34503982)"", ""FINAL CONFIDENCE GRADING"": ""4) Not assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Thr794Ile""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@T794I,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Thr794Ile""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@D767N,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Asp767Asn""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@D767N,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Asp767Asn""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@F696L,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpL5_p.Phe696Leu""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@c-11a,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": ""Literature evidence (PMID 28031270; 34503982)"", ""FINAL CONFIDENCE GRADING"": ""4) Not assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""5) Not assoc w R"", ""WHO HGVS"": ""mmpS5_c.-74G>T""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@del_0.81,U,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""mmpS5_c.-519_-82del""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@del_0.81,U,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""mmpS5_c.-519_-82del""}",{}
@@ -687,7 +694,7 @@ NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@W39!,R,{},"{""Observe
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@Y28!,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": ""Indel frameshift or premature stop codon (LoF)"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""katG_p.Tyr28*""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@V1M,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": null, ""Present_SOLO_R"": null, ""Present_SOLO_S"": null}, ""Additional grading criteria applied"": ""Silent mutation"", ""FINAL CONFIDENCE GRADING"": ""4) Not assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""katG_c.1G>A""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@!187R,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 2, ""Present_SOLO_R"": 2, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""WHO HGVS"": ""pncA_p.Ter187Argext*?""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@M1V&pncA@!187W,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 5, ""Present_SOLO_R"": 4, ""Present_SOLO_S"": 1}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""WHO HGVS"": ""pncA_p.Ter187Trpext*?""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@!187W,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 5, ""Present_SOLO_R"": 4, ""Present_SOLO_S"": 1}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""WHO HGVS"": ""pncA_p.Ter187Trpext*?""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@del_1.0,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 543, ""Present_SOLO_R"": 508, ""Present_SOLO_S"": 35}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""pncA_LoF""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*_fs,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 543, ""Present_SOLO_R"": 508, ""Present_SOLO_S"": 35}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""pncA_LoF""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@M1?,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 543, ""Present_SOLO_R"": 508, ""Present_SOLO_S"": 35}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""pncA_LoF""}",{}
@@ -1108,7 +1115,6 @@ NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@W21!,R,{},"{""Observe
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@M1I,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": null, ""Present_SOLO_R"": null, ""Present_SOLO_S"": null}, ""Additional grading criteria applied"": ""Silent mutation"", ""FINAL CONFIDENCE GRADING"": ""4) Not assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""ethA_c.3G>C""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@M1L,S,{},"{""Observed_samples"": {""Present_SOLO_SR"": null, ""Present_SOLO_R"": null, ""Present_SOLO_S"": null}, ""Additional grading criteria applied"": ""Silent mutation"", ""FINAL CONFIDENCE GRADING"": ""4) Not assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""ethA_c.1A>C""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@t-7c,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 108, ""Present_SOLO_R"": 47, ""Present_SOLO_S"": 61}, ""Additional grading criteria applied"": ""Evidence from ALL dataset only"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""ethA_c.-7T>C""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@-38_del_cgttgacgg&ethR@-37_del_agatgtcgaca,U,{},"{""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""ethA_c.-49_-30delTGTCGACATCTCGTTGACGG""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@del_1.0,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 881, ""Present_SOLO_R"": 533, ""Present_SOLO_S"": 348}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""gid_LoF""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*_fs,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 881, ""Present_SOLO_R"": 533, ""Present_SOLO_S"": 348}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""gid_LoF""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@M1?,R,{},"{""Observed_samples"": {""Present_SOLO_SR"": 881, ""Present_SOLO_R"": 533, ""Present_SOLO_S"": 348}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""gid_LoF""}",{}
@@ -1268,217 +1274,435 @@ NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@1354_indel,R,{},"{""e
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@1355_indel,R,{},"{""expert_rule"": ""Any non-synonymous mutation or indel in the RRDR of rpoB (RIF)""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@1356_indel,R,{},"{""expert_rule"": ""Any non-synonymous mutation or indel in the RRDR of rpoB (RIF)""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@H71D,R,{},"{""expert_rule"": ""Previous WHO guidance and mutations specifically interpreted as marker for R in WHO-endorsed gDST assay""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,Rv2042c@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@*=,S,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@-*?,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@*=,S,{},"{""default_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@V1?&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@V1?&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@V1?&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@V1?&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@V1?&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@V1?&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@V1?&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@V1?&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@del_1.0&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@del_1.0&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@del_1.0&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@del_1.0&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*_fs&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*_fs&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*_fs&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*_fs&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@*!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@del_1.0&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@del_1.0&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@del_1.0&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@del_1.0&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*_fs&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*_fs&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*_fs&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*_fs&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@*!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q22!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q22!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q22!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q22!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q22!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q22!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q22!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q22!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L32S&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L32S&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L32S&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L32S&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L32S&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L32S&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L32S&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L32S&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@A36V&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@A36V&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@A36V&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@A36V&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@A36V&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@A36V&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@A36V&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@A36V&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R38!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R38!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R38!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R38!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R38!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R38!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R38!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R38!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@W42!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@W42!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@W42!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@W42!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@C46R&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@C46R&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@C46R&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@C46R&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@C46R&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@C46R&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@C46R&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@C46R&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@S53!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@S53!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@S53!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@S53!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@I67S&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@I67S&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@I67S&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@I67S&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@I67S&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@I67S&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@I67S&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@I67S&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@N70D&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@N70D&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@N70D&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@N70D&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@N70D&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@N70D&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@N70D&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@N70D&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q76!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q76!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q76!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q76!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q76!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q76!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q76!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q76!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y92!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y92!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y92!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y92!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E113!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E113!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E113!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E113!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E113!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E113!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E113!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E113!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q115!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q115!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q115!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Q115!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q115!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q115!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q115!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Q115!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L117R&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L117R&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L117R&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@L117R&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L117R&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L117R&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L117R&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@L117R&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@G121R&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@G121R&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@G121R&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@G121R&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@G121R&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@G121R&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@G121R&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@G121R&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R132!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R132!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R132!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R132!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R134!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R134!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R134!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R134!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E138!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E138!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E138!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E138!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E138!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E138!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E138!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@E138!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y145!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y145!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y145!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y145!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Y145!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Y145!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Y145!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@Y145!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@M146T&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@M146T&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@M146T&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@M146T&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@M146T&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@M146T&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@M146T&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@M146T&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E147!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E147!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E147!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@E147!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R156!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R156!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R156!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@R156!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R156!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R156!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R156!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,^Rv0678@R156!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y157!&mmpL5@del_1.0,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y157!&mmpL5@*_fs,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y157!&mmpL5@M1?,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,^Rv0678@Y157!&mmpL5@*!,S,{},"{""expert_rule"": ""Rv0678 mutations confer resistance only if the corresponding efflux pump is functional. It appears that mmpL5 LoF mutations... can confer a hyper-susceptible phenotype to BDQ and CFZ""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@-8_del_c&eis@del_1.0,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*_fs&eis@-8_del_c,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@-8_del_c&eis@V1?,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*!&eis@-8_del_c,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@del_1.0&eis@g-10a,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*_fs&eis@g-10a,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@V1?&eis@g-10a,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*!&eis@g-10a,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@c-12t&eis@del_1.0,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*_fs&eis@c-12t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@V1?&eis@c-12t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*!&eis@c-12t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,^eis@c-14t&eis@del_1.0,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,^eis@*_fs&eis@c-14t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,^eis@V1?&eis@c-14t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,^eis@*!&eis@c-14t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@c-14t&eis@del_1.0,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*_fs&eis@c-14t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@V1?&eis@c-14t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*!&eis@c-14t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@del_1.0&eis@g-37t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*_fs&eis@g-37t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@V1?&eis@g-37t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,^eis@*!&eis@g-37t,S,{},"{""expert_rule"": ""eis promoter mutations cannot confer resistance if genetically linked with LoF variants in eis coding region (epistasis).""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,Rv0678@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,Rv0678@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,Rv2983@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,atpE@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,ddn@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,eis@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,eis@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,EMB,embB@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,ethA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,fabG1@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,fabG1@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiB@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fbiC@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,DLM,fgd1@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,gid@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,ETH,inhA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,inhA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@*?,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@-*?,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@*_indel,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@-*_indel,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@del_0.0,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,mmpL5@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@*?,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@-*?,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@*_indel,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@-*_indel,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@del_0.0,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,mmpL5@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,BDQ,pepQ@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CFZ,pepQ@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rplC@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,RIF,rpoB@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rpsL@*=,S,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LZD,rrl@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,AMI,rrs@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,rrs@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,KAN,rrs@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,STM,rrs@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@-*?,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@-*_indel,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@del_0.0,U,{},"{""reporting_rule"": ""True""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,CAP,tlyA@*=,S,{},"{""reporting_rule"": ""True""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@S447X,F,{},"{""Resistant prediction"": ""S447F"", ""Observed_samples"": {""Present_SOLO_SR"": 32, ""Present_SOLO_R"": 16, ""Present_SOLO_S"": 16}, ""Additional grading criteria applied"": ""Evidence from ALL dataset only"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""gyrB_p.Ser447Phe""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,MXF,gyrB@S447X,F,{},"{""Resistant prediction"": ""S447F"", ""Observed_samples"": {""Present_SOLO_SR"": 22, ""Present_SOLO_R"": 3, ""Present_SOLO_S"": 19}, ""Additional grading criteria applied"": ""FQ cross-resistance"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""gyrB_p.Ser447Phe""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,LEV,gyrB@D461X,F,{},"{""Resistant prediction"": ""D461N"", ""Observed_samples"": {""Present_SOLO_SR"": 45, ""Present_SOLO_R"": 27, ""Present_SOLO_S"": 18}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""gyrB_p.Asp461Asn""}",{}
@@ -1647,7 +1871,7 @@ NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@W90X,F,{},"{""Resista
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@Q88X,F,{},"{""Resistant prediction"": ""Q88!"", ""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": ""Indel frameshift or premature stop codon (LoF)"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""katG_p.Gln88*""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@W39X,F,{},"{""Resistant prediction"": ""W39!"", ""Observed_samples"": {""Present_SOLO_SR"": 1, ""Present_SOLO_R"": 1, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": ""Indel frameshift or premature stop codon (LoF)"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""katG_p.Trp39*""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,INH,katG@Y28X,F,{},"{""Resistant prediction"": ""Y28!"", ""Observed_samples"": {""Present_SOLO_SR"": 0, ""Present_SOLO_R"": 0, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": ""Indel frameshift or premature stop codon (LoF)"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""katG_p.Tyr28*""}",{}
-NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@!187X,F,{},"{""Resistant prediction"": ""!187R"", ""Observed_samples"": {""Present_SOLO_SR"": 2, ""Present_SOLO_R"": 2, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""WHO HGVS"": ""pncA_p.Ter187Argext*?""}",{}
+NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@!187X,F,{},"{""Resistant prediction"": ""!187W"", ""Observed_samples"": {""Present_SOLO_SR"": 5, ""Present_SOLO_R"": 4, ""Present_SOLO_S"": 1}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""WHO HGVS"": ""pncA_p.Ter187Trpext*?""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@M1X,F,{},"{""Resistant prediction"": ""M1?"", ""Observed_samples"": {""Present_SOLO_SR"": 543, ""Present_SOLO_R"": 508, ""Present_SOLO_S"": 35}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""pncA_LoF""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@L182X,F,{},"{""Resistant prediction"": ""L182S"", ""Observed_samples"": {""Present_SOLO_SR"": 18, ""Present_SOLO_R"": 14, ""Present_SOLO_S"": 4}, ""Additional grading criteria applied"": null, ""FINAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""INITIAL CONFIDENCE GRADING"": ""1) Assoc w R"", ""WHO HGVS"": ""pncA_p.Leu182Ser""}",{}
 NC_000962.3,WHO-UCN-GTB-PCI-2023.5,2.0,GARC1,RFUS,PZA,pncA@E181X,F,{},"{""Resistant prediction"": ""E181!"", ""Observed_samples"": {""Present_SOLO_SR"": 1, ""Present_SOLO_R"": 1, ""Present_SOLO_S"": 0}, ""Additional grading criteria applied"": ""Indel frameshift or premature stop codon (LoF)"", ""FINAL CONFIDENCE GRADING"": ""2) Assoc w R - Interim"", ""INITIAL CONFIDENCE GRADING"": ""3) Uncertain significance"", ""WHO HGVS"": ""pncA_p.Glu181*""}",{}
