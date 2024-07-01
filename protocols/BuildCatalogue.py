@@ -53,7 +53,7 @@ class BuildCatalogue:
 
         while self.run:
             # while there are susceptible solos, call susceptible and remove
-            self.build_S_arr(samples, mutations)
+            self.classify(samples, mutations)
 
         # once the method gets jammed (ie no more susceptible solo mutations),
         # call all remaining solos (R and U) if there are any
@@ -62,7 +62,7 @@ class BuildCatalogue:
         # build catalogue object from phenotype arrays
         self.catalogue = self.construct_catalogue()
 
-    def build_S_arr(self, samples, mutations):
+    def classify(self, samples, mutations):
 
         # remove mutations predicted as susceptible from df (to potentially proffer additional, effective solos)
         mutations = mutations[~mutations.GENE_MUT.isin(i["mut"] for i in self.S)]
@@ -72,22 +72,27 @@ class BuildCatalogue:
         # extract samples with only 1 mutation
         solos = joined.groupby("UNIQUEID").filter(lambda x: len(x) == 1)
 
-        # method is jammed - end here.
+        # no solos, so method is jammed - end here and move to mop up.
         if len(solos) == 0:
             self.run = False
 
         s_iters = 0
-        # for non WT or synonymous mutations
-        for mut in solos[~solos.GENE_MUT.isna()].GENE_MUT.unique():
+        # for non WT or synonymous mutations or already classified resistant mutations
+        for mut in solos[
+            (~solos.GENE_MUT.isna()) & (~solos.GENE_MUT.isin(i["mut"] for i in self.R))
+        ].GENE_MUT.unique():
             # determine phenotype of mutation using Fisher's test
             pheno = self.fisher_binary(solos, mut)
             if pheno["pred"] == "S":
-                # if susceptible, add mutation to phenotype array
+                # if susceptible, add mutation to susceptible array
                 self.S.append({"mut": mut, "evid": pheno["evid"]})
                 s_iters += 1
+            elif pheno["pred"] == "R":
+                # if resistant, add mutations to resistant array
+                self.R.append({"mut": mut, "evid": pheno["evid"]})
 
         if s_iters == 0:
-            # if no susceptible solos (ie jammed) - move to mop up
+            # no susceptible solos, so method is jammed - move to mop up
             self.run = False
 
     def mop_up(self, samples, mutations):
@@ -100,8 +105,10 @@ class BuildCatalogue:
         # extract samples with only 1 mutation
         solos = joined.groupby("UNIQUEID").filter(lambda x: len(x) == 1)
 
-        # for non WT or synonymous mutations
-        for mut in solos[~solos.GENE_MUT.isna()].GENE_MUT.unique():
+        # for non WT or synonymous mutations or already classified resistant mutations
+        for mut in solos[
+            (~solos.GENE_MUT.isna()) & (~solos.GENE_MUT.isin(i["mut"] for i in self.R))
+        ].GENE_MUT.unique():
             # determine phenotype of mutation using Fisher's test and add mutation to phenotype array (should be no S)
             pheno = self.fisher_binary(solos, mut)
             if pheno["pred"] == "R":
@@ -113,8 +120,8 @@ class BuildCatalogue:
         R_count = len(solos[(solos.PHENOTYPE == "R") & (solos.GENE_MUT == mut)])
         S_count = len(solos[(solos.PHENOTYPE == "S") & (solos.GENE_MUT == mut)])
 
-        R_count_no_mut = len(solos[(solos.GENE_MUT.isna()) & (solos.PHENOTYPE == "R")])
-        S_count_no_mut = len(solos[(solos.GENE_MUT.isna()) & (solos.PHENOTYPE == "S")])
+        R_count_no_mut = len(solos[(solos.GENE_MUT != mut ) & (solos.PHENOTYPE == "R")])
+        S_count_no_mut = len(solos[(solos.GENE_MUT!= mut) & (solos.PHENOTYPE == "S")])
 
         return (
             R_count,
@@ -126,7 +133,9 @@ class BuildCatalogue:
 
     def fisher_binary(self, solos, mut):
         # Build contingency table
-        R_count, S_count, R_count_no_mut, S_count_no_mut, data = self.build_contigency(solos, mut)
+        R_count, S_count, R_count_no_mut, S_count_no_mut, data = self.build_contigency(
+            solos, mut
+        )
         # Run Fishers exact
         _, p_value = stats.fisher_exact(data)
 
@@ -142,11 +151,7 @@ class BuildCatalogue:
             prediction = "U"
 
         # Evidence structure
-        evidence = [
-            [R_count, S_count],
-            [R_count_no_mut, S_count_no_mut],
-            [p_value, _]
-        ]
+        evidence = [[R_count, S_count], [R_count_no_mut, S_count_no_mut], [p_value, _]]
 
         return {"pred": prediction, "evid": evidence}
 
