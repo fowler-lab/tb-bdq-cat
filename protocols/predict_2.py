@@ -70,6 +70,12 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
         if pred == "S" and label == "R"
     ]
 
+    FP_id = [
+        id_
+        for id_, label, pred in zip(ids, labels, predictions)
+        if pred == "R" and label == "S"
+    ]
+
     # Generate confusion matrix for performance analysis
     cm = utils.confusion_matrix(labels, predictions, classes=["R", "S", "U"])
 
@@ -91,4 +97,4 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
         print("Sensitivity:", sensitivity)
         print("Specificity:", specificity)
 
-    return [cm, isolate_cov, sensitivity, specificity, FN_id]
+    return [cm, isolate_cov, sensitivity, specificity, FN_id, FP_id]

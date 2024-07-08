@@ -232,7 +232,7 @@ def extract_codons(gene, complement=False):
 
 
 def RSIsolateTable(df, genes):
-    """returns df of number of isolates that contain each parameter"""
+    """returns df of number of isolates for each phenotype"""
     table = {}
     table["Total"] = {
         "R": df[df.PHENOTYPE == "R"].UNIQUEID.nunique(),
