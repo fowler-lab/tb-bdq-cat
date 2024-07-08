@@ -103,10 +103,12 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
             else:
                 predictions.append("S")
 
-    FN_id = []
+    FN_id, FP_id = [], []
     for i in range(len(labels)):
         if (predictions[i] == "S") & (labels[i] == "R"):
             FN_id.append(ids[i])
+        elif (predictions[i] == "R") & (labels[i] == "S"):
+            FP_id.append(ids[i])
 
     cm = confusion_matrix(labels, predictions)
 
@@ -126,7 +128,7 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
         print("Sensitivity:", sensitivity)
         print("Specificity:", specificity)
 
-    return [cm, isolate_cov, sensitivity, specificity, FN_id]
+    return [cm, isolate_cov, sensitivity, specificity, FN_id, FP_id]
 
 
 
