@@ -1,9 +1,7 @@
 ,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
 275,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@*=,S,{},"{""default_rule"": ""True""}",{}
 281,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,pepQ@*=,S,{},"{""default_rule"": ""True""}",{}
-287,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@*=,S,{},"{""default_rule"": ""True""}",{}
-293,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@*=,S,{},"{""default_rule"": ""True""}",{}
-299,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@*=,S,{},"{""default_rule"": ""True""}",{}
+287,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@*=,S,{},"{""default_rule"": ""True""}",{}
 4,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@192_ins_g,R,{},"[{""proportion"": 0.43333333333333335, ""confidence"": [0.31572396804686764, 0.5589656122387443], ""p_value"": 2.2562371617659702e-11, ""contingency"": [[26, 34], [108, 8314]]}]",{}
 24,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@Q115!,R,{},"[{""proportion"": 0.6666666666666666, ""confidence"": [0.20765960080204768, 0.9385080552796037], ""p_value"": 0.028000000000000008, ""contingency"": [[2, 1], [108, 8314]]}]",{}
 37,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@141_ins_c,R,{},"[{""proportion"": 0.853448275862069, ""confidence"": [0.7777948323656809, 0.9064424992466434], ""p_value"": 1.737477267349393e-80, ""contingency"": [[99, 17], [108, 8314]]}]",{}
@@ -289,18 +287,8 @@
 284,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,pepQ@-*?,U,{},"{""default_rule"": ""True""}",{}
 285,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,pepQ@*?,U,{},"{""default_rule"": ""True""}",{}
 286,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,pepQ@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-288,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-289,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@*_indel,U,{},"{""default_rule"": ""True""}",{}
-290,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@-*?,U,{},"{""default_rule"": ""True""}",{}
-291,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@*?,U,{},"{""default_rule"": ""True""}",{}
-292,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-294,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-295,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@*_indel,U,{},"{""default_rule"": ""True""}",{}
-296,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@-*?,U,{},"{""default_rule"": ""True""}",{}
-297,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@*?,U,{},"{""default_rule"": ""True""}",{}
-298,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@del_0.0,U,{},"{""default_rule"": ""True""}",{}
-300,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@-*_indel,U,{},"{""default_rule"": ""True""}",{}
-301,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@*_indel,U,{},"{""default_rule"": ""True""}",{}
-302,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@-*?,U,{},"{""default_rule"": ""True""}",{}
-303,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@*?,U,{},"{""default_rule"": ""True""}",{}
-304,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@del_0.0,U,{},"{""default_rule"": ""True""}",{}
+288,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@-*_indel,U,{},"{""default_rule"": ""True""}",{}
+289,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@*_indel,U,{},"{""default_rule"": ""True""}",{}
+290,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@-*?,U,{},"{""default_rule"": ""True""}",{}
+291,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@*?,U,{},"{""default_rule"": ""True""}",{}
+292,NC_000962.3,BDQ-FRS-0.1-2024.06,1.1,GARC1,RUS,BDQ,atpE@del_0.0,U,{},"{""default_rule"": ""True""}",{}

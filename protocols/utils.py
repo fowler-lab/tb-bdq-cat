@@ -359,7 +359,7 @@ def compare_metrics_groups(performance, figsize=(8, 6)):
             y="Value",
             hue="Dataset",
             data=df,
-            palette=["#1b9e77", "#7570b3"],
+            palette=["#1b9e77", "#7570b3", "#fb8072"],
             ax=axes[i],
         )
 
