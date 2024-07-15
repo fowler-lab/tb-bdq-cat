@@ -73,6 +73,12 @@
 291,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@150_ins_c,R,{},"[{""proportion"": 1.0, ""confidence"": [0.5655175352168252, 1.0], ""p_value"": 1.0000000000000003e-05, ""contingency"": [[5, 0], [136, 10372]]}]",{}
 297,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@R94Q,R,{},"[{""proportion"": 1.0, ""confidence"": [0.3423802275066531, 1.0], ""p_value"": 0.010000000000000002, ""contingency"": [[2, 0], [136, 10372]]}]",{}
 298,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@R109W,R,{},"[{""proportion"": 1.0, ""confidence"": [0.3423802275066531, 1.0], ""p_value"": 0.010000000000000002, ""contingency"": [[2, 0], [136, 10372]]}]",{}
+331,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@*_fs,R,{},"{""default_rule"": ""True""}",{}
+332,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@*!,R,{},"{""default_rule"": ""True""}",{}
+333,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,pepQ@*_fs,R,{},"{""default_rule"": ""True""}",{}
+334,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,pepQ@*!,R,{},"{""default_rule"": ""True""}",{}
+335,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,atpE@*_fs,R,{},"{""default_rule"": ""True""}",{}
+336,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,atpE@*!,R,{},"{""default_rule"": ""True""}",{}
 0,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@A101E,U,{},"[{""proportion"": 0.0, ""confidence"": [0.0, 0.7934506856227626], ""p_value"": 1.0, ""contingency"": [[0, 1], [136, 10372]]}]",{}
 1,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@S68N,U,{},"[{""proportion"": 1.0, ""confidence"": [0.20654931437723742, 1.0], ""p_value"": 0.1, ""contingency"": [[1, 0], [136, 10372]]}]",{}
 2,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,Rv0678@Q51R,U,{},"[{""proportion"": 0.3333333333333333, ""confidence"": [0.061491944720396215, 0.7923403991979523], ""p_value"": 0.271, ""contingency"": [[1, 2], [136, 10372]]}]",{}
@@ -330,3 +336,4 @@
 328,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,atpE@-*?,U,{},"{""default_rule"": ""True""}",{}
 329,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,atpE@*?,U,{},"{""default_rule"": ""True""}",{}
 330,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,atpE@del_0.0,U,{},"{""default_rule"": ""True""}",{}
+337,NC_000962.3,BDQ-2024.07,1.1,GARC1,RUS,BDQ,placeholder@U1U,U,{},{},{}
