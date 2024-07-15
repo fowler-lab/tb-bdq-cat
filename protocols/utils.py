@@ -89,6 +89,43 @@ def combined_data_table(all_data):
     )
     return combined_df
 
+def data_table(all_data):
+    """
+    Creates a single dataframe with multi-level columns for sample and mutation counts.
+
+    Parameters:
+    all_data (pd.DataFrame): The input dataframe containing all sample data.
+
+    Returns:
+    pd.DataFrame: A combined dataframe with multi-level columns.
+    """
+    df_all = generate_isolate_or_variant_table(
+        all_data, all_data[GENE].unique(), unique=True
+    )
+
+    df_variants = generate_isolate_or_variant_table(
+        all_data, all_data[GENE].unique(), unique=False
+    )
+
+    combined_df = pd.concat(
+        [df_all,  df_variants], axis=1
+    )
+
+    combined_df.columns = pd.MultiIndex.from_tuples(
+        zip(
+            [
+                "Samples",
+                "",
+                "",
+                "Mutations",
+                "",
+                "",
+            ],
+            combined_df.columns,
+        )
+    )
+    return combined_df
+
 
 def generate_isolate_or_variant_table(df, genes, unique):
     """
@@ -396,8 +433,7 @@ def str_to_dict(s):
     except json.JSONDecodeError:
         return s
 
-
-def plot_tricolour_venn(subsets, labels):
+def plot_tricolour_venn(subsets, labels, figsize=(8, 6), x_offsets=(0.03, 0.03), y_offsets=(-0.045, -0.01)):
     """
     Generates a tricolour Venn diagram for variants present in two different groups.
 
@@ -406,27 +442,39 @@ def plot_tricolour_venn(subsets, labels):
                      Example: (size_in_first_set_only, size_in_second_set_only, size_in_both_sets)
     labels (tuple): A tuple of two strings representing the labels for the two sets.
                     Example: ("WHO Catalogue", "MMM Catalogue")
+    figsize (tuple): A tuple specifying the size of the figure.
+                     Example: (8, 6)
+    x_offsets (tuple): A tuple specifying the x position offsets for the labels.
+                       Example: (0.03, 0.03)
+    y_offsets (tuple): A tuple specifying the y position offsets for the labels.
+                       Example: (-0.045, -0.01)
 
     Returns:
     None
     """
+    plt.figure(figsize=figsize)
     v = venn2(subsets=subsets, set_labels=labels)
     v.get_patch_by_id("10").set_color("#1b9e77")  # Color for WHO only
     v.get_patch_by_id("01").set_color("#7570b3")  # Color for MMM only
     v.get_patch_by_id("11").set_color("#d95f02")  # Color for intersection
 
+    # Adjust position and font size for the first label
     label = v.set_labels[0]
     x, y = label.get_position()
-    label.set_position((x - 0.2, y))
-    label.set_fontsize(14)
+    label.set_position((x + x_offsets[0], y + y_offsets[0]))
+    label.set_fontsize(12)
 
+    # Adjust position and font size for the second label
     label = v.set_labels[1]
     x, y = label.get_position()
-    label.set_position((x + 0.2, y - 0.02))
+    label.set_position((x + x_offsets[1], y + y_offsets[1]))
+    label.set_fontsize(12)
 
+    # Adjust font size for subset labels
     for text in v.subset_labels:
-        text.set_fontsize(20)
+        text.set_fontsize(22)
 
+    plt.show()
 
 def FRS_vs_metric(df, cov=True):
     """
@@ -485,13 +533,13 @@ def FRS_vs_metric(df, cov=True):
             xytext=(25, -3),
             ha="center",
         )
-
+ 
     # Add vertical lines and text annotations
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
     plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
-    plt.text(0.23, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
+    plt.text(0.15, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
 
     # Despine and grid settings
     sns.despine(top=True, right=True)
@@ -771,7 +819,11 @@ def background_vs_metric(df, cov=True):
     plt.ylim(0, 110)
     plt.show()
 
-def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_count_threshold=90, figsize=(20, 8), bar_width=1.5):
+
+
+
+
+def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_count_threshold=90, figsize=(20, 8), bar_width=1.5, line_counts=None, line_color='black', line_label='Threshold Line'):
     """
     Plots stacked bars based on the provided counts and positions with the specified styling.
     
@@ -782,6 +834,9 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
     high_count_threshold (int): Threshold to create an inset for bars with counts above this value.
     figsize (tuple): Figure size in the format (width, height).
     bar_width (float): Width of the bars.
+    line_counts (dict): Dictionary with positions as keys and counts as values to draw a line within each bar at the specified count.
+    line_color (str): Color of the lines.
+    line_label (str): Label for the line in the legend.
     """
     if len(colors) != len(grouped_counts):
         raise ValueError("The length of colors must match the length of grouped_counts")
@@ -789,8 +844,6 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
     # Create a DataFrame from the grouped counts
     df = pd.DataFrame(grouped_counts).reindex(all_grouped_positions, fill_value=0)
     
-    # Sort the columns by their total counts to ensure smaller bars are plotted on top
-    df = df[df.sum().sort_values().index]
 
     # Plot the data
     fig, ax = plt.subplots(figsize=figsize)
@@ -798,7 +851,15 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
 
     ax.set_ylabel("Number of Isolates", fontsize=15)
     ax.set_xlabel("Codon Position in Rv0678", fontsize=15)
-    ax.legend(loc="upper left", frameon=False)
+
+    handles, labels = ax.get_legend_handles_labels()
+
+    if line_counts:
+        custom_line = plt.Line2D([0], [0], color=line_color, linestyle='-', linewidth=2)
+        handles.append(custom_line)
+        labels.append(line_label)
+        
+    ax.legend(handles=handles, labels=labels, loc="upper left", frameon=False)
 
     # Increase the number of x-tick labels
     ax.set_xticks(range(len(all_grouped_positions)))
@@ -813,6 +874,13 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
     high_counts = mutation_counts_grouped[mutation_counts_grouped > high_count_threshold]
     ax.set_ylim(0, high_count_threshold)
 
+    # Draw lines within the bars at specified counts
+    if line_counts:
+        for position, count in line_counts.items():
+            if position in all_grouped_positions:
+                pos_index = all_grouped_positions.index(position)
+                ax.plot([pos_index - bar_width / 2, pos_index + bar_width / 2], [count, count], color=line_color, linestyle='-', linewidth=2)
+
     # Create an inset plot
     ax_inset = inset_axes(ax, width="6%", height="48%", loc="upper right")
 
@@ -824,12 +892,21 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
     ax_inset.set_xticks(range(len(high_counts.index)))
     ax_inset.set_xticklabels(high_counts.index, rotation=90)
 
+    # Draw lines within the bars at specified counts for the inset plot
+    if line_counts:
+        for position, count in line_counts.items():
+            if position in high_counts.index:
+                pos_index = high_counts.index.tolist().index(position)
+                ax_inset.plot([pos_index - bar_width / 2, pos_index + bar_width / 2], [count, count], color=line_color, linestyle='-', linewidth=2)
+
     # Remove top and right spines from both plots
     for spine in ["top", "right"]:
         ax.spines[spine].set_visible(False)
         ax_inset.spines[spine].set_visible(False)
 
     plt.show()
+
+
 
 def wilson(R, S):
     '''Calculates wilson confidence intervals for supplied counts'''
