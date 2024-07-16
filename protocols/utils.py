@@ -9,7 +9,6 @@ from matplotlib.patches import Rectangle
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 
-
 PHENOTYPE = "PHENOTYPE"
 UNIQUEID = "UNIQUEID"
 GENE = "GENE"
@@ -89,6 +88,7 @@ def combined_data_table(all_data):
     )
     return combined_df
 
+
 def data_table(all_data):
     """
     Creates a single dataframe with multi-level columns for sample and mutation counts.
@@ -107,9 +107,7 @@ def data_table(all_data):
         all_data, all_data[GENE].unique(), unique=False
     )
 
-    combined_df = pd.concat(
-        [df_all,  df_variants], axis=1
-    )
+    combined_df = pd.concat([df_all, df_variants], axis=1)
 
     combined_df.columns = pd.MultiIndex.from_tuples(
         zip(
@@ -433,7 +431,10 @@ def str_to_dict(s):
     except json.JSONDecodeError:
         return s
 
-def plot_tricolour_venn(subsets, labels, figsize=(8, 6), x_offsets=(0.03, 0.03), y_offsets=(-0.045, -0.01)):
+
+def plot_tricolour_venn(
+    subsets, labels, figsize=(8, 6), x_offsets=(0.03, 0.03), y_offsets=(-0.045, -0.01)
+):
     """
     Generates a tricolour Venn diagram for variants present in two different groups.
 
@@ -475,6 +476,7 @@ def plot_tricolour_venn(subsets, labels, figsize=(8, 6), x_offsets=(0.03, 0.03),
         text.set_fontsize(22)
 
     plt.show()
+
 
 def FRS_vs_metric(df, cov=True):
     """
@@ -533,7 +535,7 @@ def FRS_vs_metric(df, cov=True):
             xytext=(25, -3),
             ha="center",
         )
- 
+
     # Add vertical lines and text annotations
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
     plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
@@ -561,7 +563,7 @@ def plot_catalogue_counts(df, figsize=(6, 2.5)):
     """
     # Extract the gene names
     df["GENE"] = df["MUTATION"].apply(lambda x: x.split("@")[0])
-    
+
     # Count the occurrences of each prediction type per gene
     count_data = df.groupby(["GENE", "PREDICTION"]).size().unstack(fill_value=0)
 
@@ -627,38 +629,70 @@ def plot_catalogue_proportions(
     if order:
         df = df.sort_values(by=["Proportion", "Interval"], ascending=[False, False])
 
-    # Plotting
-    fig, ax = plt.subplots(figsize=figsize)
-    xerr = [
-        abs(df["Proportion"] - df["Lower_bound"]),
-        abs(df["Upper_bound"] - df["Proportion"]),
-    ]
+    dataframes = []
+    length = 106
+    start = 0
+    end = length
+    while True:
+        if len(df) > end:
+            dataframes.append(df[start:end])
+            start += length
+            end += length
+        else:
+            dataframes.append(df[start:])
+            break
 
-    for i in range(len(df)):
-        ax.plot(
-            [df["Lower_bound"].iloc[i], df["Upper_bound"].iloc[i]],
-            [i, i],
-            color="darkBlue",
-            lw=2,
-        )
-        ax.plot(df["Proportion"].iloc[i], i, marker="s", color="darkBlue", markersize=5)
-        if background is not None:
-            ax.axvline(x=df["Background"].iloc[i], color="red", linestyle="--", lw=1)
+    figures = []
+    axes = []
 
-    ax.set_yticks(np.arange(len(df)))
-    ax.set_yticklabels([i if len(i) < 20 else i[:20] for i in df["Mutation"]])
-    ax.set_title(title)
+    for df2 in dataframes:
+        # Plotting
+        height = len(df2) / 9.85 + 0.9
+        fig, ax = plt.subplots(figsize=(4, height))
+        xerr = [
+            abs(df2["Proportion"] - df2["Lower_bound"]),
+            abs(df2["Upper_bound"] - df2["Proportion"]),
+        ]
 
-    plt.xlabel("Proportions with Wilson CIs")
-    plt.ylabel("Mutation")
-    plt.tight_layout()
-    plt.xlim(0, 1.05)
-    ax.set_ylim(-0.5, len(df) - 0.5)  # Adjust y-axis limits to fit the data
-    sns.despine()
+        for i in range(len(df2)):
+            ax.plot(
+                [df2["Lower_bound"].iloc[i], df2["Upper_bound"].iloc[i]],
+                [i, i],
+                color="#377eb8",
+                lw=1,
+            )
+            ax.plot(
+                df2["Proportion"].iloc[i], i, marker="|", color="#377eb8", markersize=10
+            )
+            if background is not None:
+                ax.axvline(
+                    x=df2["Background"].iloc[i], color="red", linestyle="--", lw=1
+                )
 
-    plt.show()
+        ax.set_yticks(np.arange(len(df2)))
+        ax.set_yticklabels([i if len(i) < 20 else i[:20] for i in df2["Mutation"]])
+        ax.set_title(title)
+        for item in ax.get_yticklabels():
+            item.set_fontsize(7)
 
-def plot_catalogue_counts_from_df(df, background=None, figsize=(10, 20), order=True, title=None):
+        for item in [ax.xaxis.label, ax.yaxis.label] + ax.get_xticklabels():
+            item.set_fontsize(9)
+
+        plt.xlabel("proportion resistant")
+        # plt.ylabel("mutation")
+        plt.tight_layout()
+        plt.xlim(-0.05, 1.05)
+        ax.set_ylim(-0.5, len(df2) - 0.5)  # Adjust y-axis limits to fit the data
+        sns.despine()
+        figures.append(fig)
+        axes.append(ax)
+
+    return figures, axes
+
+
+def plot_catalogue_counts_from_df(
+    df, background=None, figsize=(10, 20), order=True, title=None
+):
     """
     Plots the proportions with confidence intervals for mutations in the given dataframe.
 
@@ -671,7 +705,7 @@ def plot_catalogue_counts_from_df(df, background=None, figsize=(10, 20), order=T
     """
     rows = []
     for index, row in df.iterrows():
-        R, S = row['R'], row['S']
+        R, S = row["R"], row["S"]
         wilson_intervals = wilson(R, S)
         rows.append(
             {
@@ -679,7 +713,8 @@ def plot_catalogue_counts_from_df(df, background=None, figsize=(10, 20), order=T
                 "Proportion": wilson_intervals["proportion"],
                 "Lower_bound": wilson_intervals["lower_bound"],
                 "Upper_bound": wilson_intervals["upper_bound"],
-                "Interval": wilson_intervals["upper_bound"] - wilson_intervals["lower_bound"],
+                "Interval": wilson_intervals["upper_bound"]
+                - wilson_intervals["lower_bound"],
                 "Background": background,
             }
         )
@@ -687,7 +722,9 @@ def plot_catalogue_counts_from_df(df, background=None, figsize=(10, 20), order=T
 
     # Sort DataFrame by Proportion
     if order:
-        plot_df = plot_df.sort_values(by=["Proportion", "Interval"], ascending=[False, False])
+        plot_df = plot_df.sort_values(
+            by=["Proportion", "Interval"], ascending=[False, False]
+        )
 
     # Plotting
     fig, ax = plt.subplots(figsize=figsize)
@@ -703,9 +740,13 @@ def plot_catalogue_counts_from_df(df, background=None, figsize=(10, 20), order=T
             color="darkBlue",
             lw=2,
         )
-        ax.plot(plot_df["Proportion"].iloc[i], i, marker="s", color="darkBlue", markersize=5)
+        ax.plot(
+            plot_df["Proportion"].iloc[i], i, marker="s", color="darkBlue", markersize=5
+        )
         if background is not None:
-            ax.axvline(x=plot_df["Background"].iloc[i], color="red", linestyle="--", lw=1)
+            ax.axvline(
+                x=plot_df["Background"].iloc[i], color="red", linestyle="--", lw=1
+            )
 
     ax.set_yticks(np.arange(len(plot_df)))
     ax.set_yticklabels([i if len(i) < 20 else i[:20] for i in plot_df["Mutation"]])
@@ -719,7 +760,6 @@ def plot_catalogue_counts_from_df(df, background=None, figsize=(10, 20), order=T
     sns.despine()
 
     plt.show()
-
 
 
 def mic_to_float(arr):
@@ -820,13 +860,20 @@ def background_vs_metric(df, cov=True):
     plt.show()
 
 
-
-
-
-def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_count_threshold=90, figsize=(20, 8), bar_width=1.5, line_counts=None, line_color='black', line_label='Threshold Line'):
+def plot_stacked_positions(
+    grouped_counts,
+    all_grouped_positions,
+    colors,
+    high_count_threshold=90,
+    figsize=(20, 8),
+    bar_width=1.5,
+    line_counts=None,
+    line_color="black",
+    line_label="Threshold Line",
+):
     """
     Plots stacked bars based on the provided counts and positions with the specified styling.
-    
+
     Parameters:
     grouped_counts (dict): Dictionary with legend keys and their corresponding count values (as pandas Series).
     all_grouped_positions (iterable): Iterable of all grouped codon positions.
@@ -838,16 +885,15 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
     line_color (str): Color of the lines.
     line_label (str): Label for the line in the legend.
     """
+
     if len(colors) != len(grouped_counts):
         raise ValueError("The length of colors must match the length of grouped_counts")
-    
+
     # Create a DataFrame from the grouped counts
     df = pd.DataFrame(grouped_counts).reindex(all_grouped_positions, fill_value=0)
-    
-
     # Plot the data
     fig, ax = plt.subplots(figsize=figsize)
-    df.plot(kind='bar', stacked=True, color=colors, width=bar_width, ax=ax)
+    df.plot(kind="bar", stacked=True, color=colors, width=bar_width, ax=ax)
 
     ax.set_ylabel("Number of Isolates", fontsize=15)
     ax.set_xlabel("Codon Position in Rv0678", fontsize=15)
@@ -855,23 +901,25 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
     handles, labels = ax.get_legend_handles_labels()
 
     if line_counts:
-        custom_line = plt.Line2D([0], [0], color=line_color, linestyle='-', linewidth=2)
+        custom_line = plt.Line2D([0], [0], color=line_color, linestyle="-", linewidth=2)
         handles.append(custom_line)
         labels.append(line_label)
-        
+
     ax.legend(handles=handles, labels=labels, loc="upper left", frameon=False)
 
     # Increase the number of x-tick labels
     ax.set_xticks(range(len(all_grouped_positions)))
     ax.set_xticklabels(all_grouped_positions)
-    ax.xaxis.set_tick_params(rotation=45)
+    ax.xaxis.set_tick_params(rotation=0)
 
     # Set the x-axis limits to remove the gaps
     ax.set_xlim([-0.5, len(all_grouped_positions) - 0.5])
 
     # Highlight the really long bars
     mutation_counts_grouped = df.sum(axis=1)
-    high_counts = mutation_counts_grouped[mutation_counts_grouped > high_count_threshold]
+    high_counts = mutation_counts_grouped[
+        mutation_counts_grouped > high_count_threshold
+    ]
     ax.set_ylim(0, high_count_threshold)
 
     # Draw lines within the bars at specified counts
@@ -879,45 +927,64 @@ def plot_stacked_positions(grouped_counts, all_grouped_positions, colors, high_c
         for position, count in line_counts.items():
             if position in all_grouped_positions:
                 pos_index = all_grouped_positions.index(position)
-                ax.plot([pos_index - bar_width / 2, pos_index + bar_width / 2], [count, count], color=line_color, linestyle='-', linewidth=2)
+                ax.plot(
+                    [pos_index - bar_width / 2, pos_index + bar_width / 2],
+                    [count, count],
+                    color=line_color,
+                    linestyle="-",
+                    linewidth=2,
+                )
 
     # Create an inset plot
     ax_inset = inset_axes(ax, width="6%", height="48%", loc="upper right")
 
     df_high_counts = df.loc[high_counts.index]
-    df_high_counts.plot(kind='bar', stacked=True, color=colors, width=bar_width, ax=ax_inset, legend=False)
+    df_high_counts.plot(
+        kind="bar",
+        stacked=True,
+        color=colors,
+        width=bar_width,
+        ax=ax_inset,
+        legend=False,
+    )
 
     ax_inset.set_xlabel("Codon Position", fontsize=10)
     ax_inset.set_ylabel("Number of Isolates", fontsize=10)
     ax_inset.set_xticks(range(len(high_counts.index)))
-    ax_inset.set_xticklabels(high_counts.index, rotation=90)
+    ax_inset.set_xticklabels(high_counts.index, rotation=0)
 
     # Draw lines within the bars at specified counts for the inset plot
     if line_counts:
         for position, count in line_counts.items():
             if position in high_counts.index:
                 pos_index = high_counts.index.tolist().index(position)
-                ax_inset.plot([pos_index - bar_width / 2, pos_index + bar_width / 2], [count, count], color=line_color, linestyle='-', linewidth=2)
+                ax_inset.plot(
+                    [pos_index - bar_width / 2, pos_index + bar_width / 2],
+                    [count, count],
+                    color=line_color,
+                    linestyle="-",
+                    linewidth=2,
+                )
 
     # Remove top and right spines from both plots
     for spine in ["top", "right"]:
         ax.spines[spine].set_visible(False)
         ax_inset.spines[spine].set_visible(False)
-
-    plt.show()
-
+    return (fig, ax)
 
 
 def wilson(R, S):
-    '''Calculates wilson confidence intervals for supplied counts'''
-    successes, n = R, R+S
+    """Calculates wilson confidence intervals for supplied counts"""
+    successes, n = R, R + S
     proportion = successes / n
     z = norm.ppf(1 - 0.05 / 2)
     denom = 1 + (z**2 / n)
     centre_adjusted_prob = proportion + (z**2 / (2 * n))
     adjusted_sd = z * np.sqrt((proportion * (1 - proportion) / n) + (z**2 / (4 * n**2)))
 
-    lower = (centre_adjusted_prob - adjusted_sd)/denom
-    upper = (centre_adjusted_prob + adjusted_sd)/denom
+    lower = (centre_adjusted_prob - adjusted_sd) / denom
+    upper = (centre_adjusted_prob + adjusted_sd) / denom
 
-    return pd.Series([proportion, lower, upper], index=['proportion', 'lower_bound', 'upper_bound'])
+    return pd.Series(
+        [proportion, lower, upper], index=["proportion", "lower_bound", "upper_bound"]
+    )
