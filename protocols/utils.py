@@ -597,7 +597,7 @@ def plot_catalogue_counts(df, figsize=(6, 2.5)):
 
 
 def plot_catalogue_proportions(
-    catalogue, background=None, figsize=(10, 20), order=True, title=None
+    catalogue, background=None, figsize=None, order=True, title=None
 ):
     """
     Plots the proportions with confidence intervals for mutations in the given catalogue.
@@ -647,8 +647,11 @@ def plot_catalogue_proportions(
 
     for df2 in dataframes:
         # Plotting
-        height = len(df2) / 9.85 + 0.9
-        fig, ax = plt.subplots(figsize=(4, height))
+        if figsize is None:
+            height = len(df2) / 9.85 + 0.9
+            fig, ax = plt.subplots(figsize=(4, height))
+        else:
+            fig, ax = plt.subplots(figsize=figsize)
         xerr = [
             abs(df2["Proportion"] - df2["Lower_bound"]),
             abs(df2["Upper_bound"] - df2["Proportion"]),
@@ -673,7 +676,10 @@ def plot_catalogue_proportions(
         ax.set_yticklabels([i if len(i) < 20 else i[:20] for i in df2["Mutation"]])
         ax.set_title(title)
         for item in ax.get_yticklabels():
-            item.set_fontsize(7)
+            if figsize is None:
+                item.set_fontsize(7)
+            else:
+                item.set_fontsize(9)
 
         for item in [ax.xaxis.label, ax.yaxis.label] + ax.get_xticklabels():
             item.set_fontsize(9)
@@ -891,12 +897,13 @@ def plot_stacked_positions(
 
     # Create a DataFrame from the grouped counts
     df = pd.DataFrame(grouped_counts).reindex(all_grouped_positions, fill_value=0)
+
     # Plot the data
     fig, ax = plt.subplots(figsize=figsize)
     df.plot(kind="bar", stacked=True, color=colors, width=bar_width, ax=ax)
 
-    ax.set_ylabel("Number of Isolates", fontsize=15)
-    ax.set_xlabel("Codon Position in Rv0678", fontsize=15)
+    ax.set_ylabel("Number of isolates", fontsize=15)
+    ax.set_xlabel("Codon position in Rv0678", fontsize=15)
 
     handles, labels = ax.get_legend_handles_labels()
 
@@ -908,12 +915,12 @@ def plot_stacked_positions(
     ax.legend(handles=handles, labels=labels, loc="upper left", frameon=False)
 
     # Increase the number of x-tick labels
-    ax.set_xticks(range(len(all_grouped_positions)))
-    ax.set_xticklabels(all_grouped_positions)
+    ax.set_xticks(range(0, len(all_grouped_positions), 5))
+    # ax.set_xticklabels(all_grouped_positions)
     ax.xaxis.set_tick_params(rotation=0)
 
     # Set the x-axis limits to remove the gaps
-    ax.set_xlim([-0.5, len(all_grouped_positions) - 0.5])
+    ax.set_xlim([0.5, len(all_grouped_positions) - 0.5])
 
     # Highlight the really long bars
     mutation_counts_grouped = df.sum(axis=1)
@@ -936,7 +943,12 @@ def plot_stacked_positions(
                 )
 
     # Create an inset plot
-    ax_inset = inset_axes(ax, width="6%", height="48%", loc="upper right")
+    ax_inset = inset_axes(
+        ax,
+        width="7%",
+        height="58%",
+        loc="upper right",
+    )
 
     df_high_counts = df.loc[high_counts.index]
     df_high_counts.plot(
@@ -948,8 +960,8 @@ def plot_stacked_positions(
         legend=False,
     )
 
-    ax_inset.set_xlabel("Codon Position", fontsize=10)
-    ax_inset.set_ylabel("Number of Isolates", fontsize=10)
+    ax_inset.set_xlabel("Codon position", fontsize=10)
+    ax_inset.set_ylabel("Number of isolates", fontsize=10)
     ax_inset.set_xticks(range(len(high_counts.index)))
     ax_inset.set_xticklabels(high_counts.index, rotation=0)
 
