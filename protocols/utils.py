@@ -476,7 +476,7 @@ def plot_tricolour_venn(subsets, labels, figsize=(8, 6), x_offsets=(0.03, 0.03),
 
     plt.show()
 
-def FRS_vs_metric(df, cov=True):
+def FRS_vs_metric(df, cov=True, figsize=(8, 4)):
     """
     Plots a comparison of performance metrics (Sensitivity, Specificity, and optionally Coverage)
     against Fraction Read Support (FRS).
@@ -485,12 +485,14 @@ def FRS_vs_metric(df, cov=True):
     df (pandas.DataFrame): DataFrame containing the performance metrics with columns "FRS",
                            "Sensitivity", "Specificity", and optionally "Coverage".
     cov (bool): If True, includes Coverage in the plot. Defaults to True.
+    figsize (tuple): A tuple specifying the size of the figure.
+                     Example: (8, 6)
 
     Returns:
     None
 
     """
-    plt.figure(figsize=(8, 4))
+    plt.figure(figsize=figsize)
 
     # Plot Sensitivity and Specificity
     sns.lineplot(x="FRS", y="Sensitivity", data=df, label="Sensitivity", color="blue")
@@ -536,10 +538,10 @@ def FRS_vs_metric(df, cov=True):
  
     # Add vertical lines and text annotations
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
-    plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
+    plt.text(0.66, 25, "WHOv2 build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
-    plt.text(0.15, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
+    plt.text(0.12, 25, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
 
     # Despine and grid settings
     sns.despine(top=True, right=True)
