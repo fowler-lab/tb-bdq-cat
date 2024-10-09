@@ -566,34 +566,45 @@ def plot_catalogue_counts(df, figsize=(6, 2.5)):
 
     # Count the occurrences of each prediction type per gene
     count_data = df.groupby(["GENE", "PREDICTION"]).size().unstack(fill_value=0)
-
-    colors = {"S": "#e41a1c", "R": "#4daf4a", "U": "#377eb8"}
+    count_data.sort_values(by="R", ascending=True, inplace=True)
+    colors = {"S": "#377eb8", "R": "#e41a1c", "U": "#aaaaaa"}
 
     # Plot the chart
     fig, ax = plt.subplots(figsize=figsize)
     bars = count_data.plot(
         kind="barh",
         stacked=True,
-        color=[colors["R"], colors["S"], colors["U"]],
+        color=[colors["S"], colors["R"], colors["U"]],
         edgecolor="none",
         width=0.8,
+        alpha=0.8,
         ax=ax,
     )
 
     ax.spines["right"].set_visible(False)
     ax.spines["top"].set_visible(False)
-    ax.legend(frameon=False, fontsize="small")
-    ax.set_xlabel("Count")
-    ax.set_ylabel("Gene")
+    # ax.legend(frameon=False, fontsize="small")
+    ax.get_legend().remove()
+    ax.set_xlabel("Number of genetic variants associated with a phenotype")
+    ax.set_ylabel("")
+    ax.set_yticklabels(count_data.index, fontstyle="italic", fontsize=10)
+    ax.set_xticks([0, 50, 100, 150, 200])
+    ax.set_xlim([0, 220])
+    # ax.axes.get_yaxis().set_visible(False)
 
     # Add data labels for R counts
     for i, (gene, row) in enumerate(count_data.iterrows()):
-        if "R" in row:
+        if "R" in row and row["R"] > 0:
             ax.text(
-                row["R"] + 2, i, f'{row["R"]}', va="center", ha="left", color="black"
+                row["R"] + 2, i, f'{row["R"]}', va="center", ha="left", color="#e41a1c"
+            )
+        if "S" in row and row["S"] > 0:
+            ax.text(
+                row["S"] + 2, i, f'{row["S"]}', va="center", ha="left", color="#377eb8"
             )
 
     plt.show()
+    return fig
 
 
 def plot_catalogue_proportions(
