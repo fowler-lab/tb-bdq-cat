@@ -1011,3 +1011,82 @@ def wilson(R, S):
     return pd.Series(
         [proportion, lower, upper], index=["proportion", "lower_bound", "upper_bound"]
     )
+
+
+def plot_stacked_positions_vertical(
+    grouped_counts,
+    all_grouped_positions,
+    colors,
+    high_count_threshold=90,
+    figsize=(20, 8),
+    bar_width=1.5,
+    line_counts=None,
+    line_color="black",
+    line_label="Threshold Line",
+):
+    """
+    Plots stacked bars based on the provided counts and positions with the specified styling.
+
+    Parameters:
+    grouped_counts (dict): Dictionary with legend keys and their corresponding count values (as pandas Series).
+    all_grouped_positions (iterable): Iterable of all grouped codon positions.
+    colors (list): List of colors for the bars, must be the same length as grouped_counts.
+    high_count_threshold (int): Threshold to create an inset for bars with counts above this value.
+    figsize (tuple): Figure size in the format (width, height).
+    bar_width (float): Width of the bars.
+    line_counts (dict): Dictionary with positions as keys and counts as values to draw a line within each bar at the specified count.
+    line_color (str): Color of the lines.
+    line_label (str): Label for the line in the legend.
+    """
+
+    if len(colors) != len(grouped_counts):
+        raise ValueError("The length of colors must match the length of grouped_counts")
+
+    # Create a DataFrame from the grouped counts
+    df = pd.DataFrame(grouped_counts).reindex(all_grouped_positions, fill_value=0)
+
+    print(df[df["Predicted R"] > 50])
+
+    # Plot the data
+    fig, ax = plt.subplots(1, 1, figsize=figsize)
+    df.plot(kind="barh", stacked=True, color=colors, width=bar_width, ax=ax, alpha=0.8)
+
+    ax.set_xlabel("")  # Number of isolates", fontsize=7)
+    ax.set_ylabel("")  # Codon position in Rv0678", fontsize=7)
+    ax.get_legend().remove()
+    ax.tick_params(axis="both", which="major", labelsize=7)
+
+    # Increase the number of x-tick labels
+    ax.set_yticks(range(0, len(all_grouped_positions), 20))
+
+    # ax.set_xticklabels(all_grouped_positions)
+    ax.yaxis.set_tick_params(rotation=0)
+
+    # Set the x-axis limits to remove the gaps
+    ax.set_ylim([0.5, len(all_grouped_positions) - 0.5])
+
+    # Highlight the really long bars
+    mutation_counts_grouped = df.sum(axis=1)
+    high_counts = mutation_counts_grouped[
+        mutation_counts_grouped > high_count_threshold
+    ]
+    ax.set_xlim(0, high_count_threshold)
+
+    # Draw lines within the bars at specified counts for the inset plot
+    if line_counts:
+        for position, count in line_counts.items():
+            if position in high_counts.index:
+                pos_index = high_counts.index.tolist().index(position)
+                ax_inset.plot(
+                    [pos_index - bar_width / 2, pos_index + bar_width / 2],
+                    [count, count],
+                    color=line_color,
+                    linestyle="-",
+                    linewidth=2,
+                )
+
+    # Remove top and right spines from both plots
+    for spine in ["top", "right"]:
+        ax.spines[spine].set_visible(False)
+
+    return (fig, ax)
