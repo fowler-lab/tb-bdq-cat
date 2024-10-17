@@ -200,12 +200,9 @@ def confusion_matrix(labels, predictions, classes):
     return cm
 
 
-
-
-
-def plot_truthtables(truth_table, U_to_S=False, fontsize=14, colors=None):
+def plot_truthtables(truth_table, U_to_S=False, figsize=(2.5, 1.5), fontsize=12):
     """
-    Plots a truth table as a confusion matrix to denote each cell with perfect squares or proportional rectangles.
+    Plots a truth table as a confusion matrix to denote each cell.
 
     Parameters:
     truth_table (pd.DataFrame): DataFrame containing the truth table values.
@@ -214,57 +211,36 @@ def plot_truthtables(truth_table, U_to_S=False, fontsize=14, colors=None):
                                 - Columns: Predicted labels ("R", "S", and optionally "U")
     U_to_S (bool): Whether to separate the "U" values from the "S" column. If True,
                    an additional column for "U" values will be used.
+    figsize (tuple): Figure size for the plot.
     fontsize (int): Font size for the text in the plot.
-    colors (list): List of four colors for the squares. 
-                   Defaults to red and green for the diagonal, pink and green for the off-diagonal.
 
     Returns:
     None
     """
-
-    # Default colors if none provided
-    if colors is None:
-        if U_to_S:
-            colors = ["#e41a1c", "#4daf4a", "#fc9272", "#4daf4a"]
-        else:
-            colors = ["#e41a1c", "#4daf4a", "#fc9272", "#4daf4a", "#4daf4a", "#4daf4a"]
-
-    
-    # Determine the number of columns for U_to_S condition
-    num_columns = 3 if not U_to_S else 2
-    num_rows = 2
-    
-    # Adjust the figure size to ensure square cells
-    figsize = (num_columns, num_rows) if num_columns == 2 else (num_columns * 1.5, num_rows)
-
     fig = plt.figure(figsize=figsize)
     axes = plt.gca()
 
     if not U_to_S:
-        assert len(colors) == 6, 'The length of supplied colors must be 6, one for each cell'
-        axes.add_patch(Rectangle((2, 0), 1, 1, fc=colors[4], alpha=0.5))
-        axes.add_patch(Rectangle((2, 1), 1, 1, fc=colors[5], alpha=0.5))
+        axes.add_patch(Rectangle((2, 0), 1, 1, fc="#377eb8", alpha=0.5))
+        axes.add_patch(Rectangle((2, 1), 1, 1, fc="#377eb8", alpha=0.5))
 
         axes.set_xlim([0, 3])
         axes.set_xticks([0.5, 1.5, 2.5])
-        axes.set_xticklabels(["S", "R", "U"], fontsize=fontsize-2)
+        axes.set_xticklabels(["S", "R", "U"], fontsize=fontsize)
     else:
-        assert len(colors) == 4, 'The length of supplied colors must be 4, one for each cell'
         axes.set_xlim([0, 2])
         axes.set_xticks([0.5, 1.5])
-        axes.set_xticklabels(["S+U", "R"], fontsize=fontsize-2)
+        axes.set_xticklabels(["S+U", "R"], fontsize=fontsize)
 
-    # Apply provided colors for the squares
-    axes.add_patch(Rectangle((0, 0), 1, 1, fc=colors[0], alpha=0.8))
-    axes.add_patch(Rectangle((1, 0), 1, 1, fc=colors[1], alpha=0.8))
-    axes.add_patch(Rectangle((1, 1), 1, 1, fc=colors[2], alpha=0.8))
-    axes.add_patch(Rectangle((0, 1), 1, 1, fc=colors[3], alpha=0.8))
+    axes.add_patch(Rectangle((0, 0), 1, 1, fc="#e41a1c", alpha=0.7))
+    axes.add_patch(Rectangle((1, 0), 1, 1, fc="#4daf4a", alpha=0.7))
+    axes.add_patch(Rectangle((1, 1), 1, 1, fc="#fc9272", alpha=0.7))
+    axes.add_patch(Rectangle((0, 1), 1, 1, fc="#4daf4a", alpha=0.7))
 
     axes.set_ylim([0, 2])
     axes.set_yticks([0.5, 1.5])
-    axes.set_yticklabels(["R", "S"], fontsize=fontsize-2)
+    axes.set_yticklabels(["R", "S"], fontsize=fontsize)
 
-    # Add text to the plot
     axes.text(
         1.5,
         0.5,
@@ -316,10 +292,7 @@ def plot_truthtables(truth_table, U_to_S=False, fontsize=14, colors=None):
             fontsize=fontsize,
         )
 
-    axes.set_aspect('equal')  # Ensure squares remain squares
     plt.show()
-
-
 
 
 def compare_metrics(performance_comparison, figsize=(8, 6)):
@@ -378,83 +351,59 @@ def compare_metrics(performance_comparison, figsize=(8, 6)):
     plt.show()
 
 
-
-def compare_metrics_groups(performance, figsize=(7, 5)):
+def compare_metrics_groups(performance, figsize=(8, 6)):
     """
-    Plots a comparison of performance metrics for different datasets, across different experiments, 
-    with bars grouped by FRS, Metric (Sensitivity/Specificity), and Dataset.
+    Plots a comparison of performance metrics for different datasets, across different experiments.
 
     Parameters:
-    performance (dict): A dictionary where keys are FRS levels (e.g., "0.25", "0.75") and values are
+    performance (dict): A dictionary where keys are subset names (e.g., different experiments) and values are
                         dictionaries containing dataset names as keys and another dictionary as values.
                         This innermost dictionary should have metric names as keys and their corresponding values as values.
                         Example:
                         {
-                            "0.25": {
-                                "Dataset1": {"Sensitivity": value1, "Specificity": value2},
-                                "Dataset2": {"Sensitivity": value3, "Specificity": value4}
+                            "Experiment1": {
+                                "Dataset1": {"Metric1": value1, "Metric2": value2},
+                                "Dataset2": {"Metric1": value3, "Metric2": value4}
                             },
-                            "0.75": {
-                                "Dataset1": {"Sensitivity": value5, "Specificity": value6},
-                                "Dataset2": {"Sensitivity": value7, "Specificity": value8}
+                            "Experiment2": {
+                                "Dataset1": {"Metric1": value5, "Metric2": value6},
+                                "Dataset2": {"Metric1": value7, "Metric2": value8}
                             }
                         }
-    figsize (tuple): Figure size in inches, default is (7, 5).
+    figsize (tuple): Figure size in inches, default is (8, 6).
 
     Returns:
     None
     """
     sns.set_theme(style="white")
+    fig, axes = plt.subplots(1, 2, figsize=figsize)  # Create subplots for two charts
 
-    # Define custom colors for datasets
-    custom_palette = {
-        "Our data Sensitivity": "#ff9999",  # Lighter red for Our data sensitivity
-        "Our data Specificity": "#99c2ff",  # Lighter blue for Our data specificity
-        "Our catalogue Sensitivity": "#e60000",  # Darker red for Our catalogue sensitivity
-        "Our catalogue Specificity": "#0066cc",  # Darker blue for Our catalogue specificity
-    }
+    # for each experiment:
+    for i, experiment in enumerate(performance.keys()):
+        # refactor dict into dataframe for seaborn
 
-    # Create a DataFrame by combining all performance data
-    data = []
-    for frs_level, datasets in performance.items():
-        for dataset, metrics in datasets.items():
-            for metric, value in metrics.items():
-                data.append([frs_level, dataset, metric, value])
+        df = (
+            pd.DataFrame(performance[experiment])
+            .T.reset_index()
+            .melt(id_vars="index", var_name="Metric", value_name="Value")
+        )
+        df.rename(columns={"index": "Dataset"}, inplace=True)
+        # plot metrics as bars
+        ax = sns.barplot(
+            x="Metric",
+            y="Value",
+            hue="Dataset",
+            data=df,
+            palette=["#1b9e77", "#7570b3", "#fb8072"],
+            ax=axes[i],
+        )
 
-    # Convert list into a DataFrame
-    df = pd.DataFrame(data, columns=["FRS", "Dataset", "Metric", "Value"])
+        ax.set_ylabel("Metric Value (%)", fontsize=12)
+        ax.set_xlabel("Metric", fontsize=12)
+        ax.tick_params(axis="x", labelsize=12)
+        ax.tick_params(axis="y", labelsize=10)
 
-    # Combine Dataset and Metric to get custom palette applied correctly
-    df['Dataset_Metric'] = df['Dataset'] + " " + df['Metric']
-
-    # Create a new column that combines FRS and Metric to achieve the required grouping
-    df['FRS_Metric'] = df['FRS'].astype(str) + '_' + df['Metric']
-    print (df)
-    # Plot metrics as grouped bars (hue for different Dataset and Metric)
-    plt.figure(figsize=figsize)
-    ax = sns.barplot(
-        x="FRS_Metric",
-        y="Value",
-        hue="Dataset_Metric",
-        data=df,
-        palette=custom_palette,
-        dodge=True,
-        hue_order=["Our data Sensitivity", "Our data Specificity", "Our catalogue Sensitivity", "Our catalogue Specificity"]
-    )
-
-    # Set labels and titles
-    ax.set_ylabel("%", fontsize=12)
-    ax.tick_params(axis="y", labelsize=12)
-    ax.set_ylim(0, 100)
-
-    # Manually set the x-tick labels
-    ax.set_xticks([0, 1, 2, 3])  # Positions for 'FRS 0.25' and 'FRS 0.75'
-    ax.set_xticklabels(['Sensitivity', 'Specificity', 'Sensitivity', 'Specificity'], fontsize=12)
-
-
-    # Annotate the bars with the percentage values
-    for p in ax.patches:
-        if p.get_height() > 0:
+        for p in ax.patches:
             ax.annotate(
                 f"{p.get_height():.2f}%",
                 (p.get_x() + p.get_width() / 2.0, p.get_height()),
@@ -462,17 +411,17 @@ def compare_metrics_groups(performance, figsize=(7, 5)):
                 va="center",
                 fontsize=10,
                 color="black",
-                xytext=(0, 5),
+                xytext=(0, 10),
                 textcoords="offset points",
             )
 
-    # Adjust the legend and plot layout
-    ax.legend_.remove()
+        ax.set_ylim(0, 100)
+        ax.set_title(f"{experiment}", fontsize=14)  # Set title for each subplot
+        ax.legend(fontsize="small", title_fontsize="small", frameon=False)
+    # clean up plot
     sns.despine()
     plt.tight_layout()
     plt.show()
-
-
 
 
 def str_to_dict(s):
@@ -546,8 +495,8 @@ def FRS_vs_metric(df, cov=True):
     plt.figure(figsize=(8, 4))
 
     # Plot Sensitivity and Specificity
-    sns.lineplot(x="FRS", y="Sensitivity", data=df, color="#377eb8")
-    sns.lineplot(x="FRS", y="Specificity", data=df, color="#e41a1c")
+    sns.lineplot(x="FRS", y="Sensitivity", data=df, label="Sensitivity", color="blue")
+    sns.lineplot(x="FRS", y="Specificity", data=df, label="Specificity", color="red")
 
     # Plot Coverage if specified
     if cov:
@@ -563,7 +512,8 @@ def FRS_vs_metric(df, cov=True):
 
     # Add labels and legend
     plt.xlabel("Fraction Read Support (FRS)")
-    plt.ylabel("%")
+    plt.ylabel("Metric (%)")
+    plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.40))
 
     # Annotate the start and end values
     for line in plt.gca().lines:
@@ -572,14 +522,14 @@ def FRS_vs_metric(df, cov=True):
         start_value = y_data[0]
         final_value = y_data[-1]
         plt.annotate(
-            f"~{start_value:.1f}",
+            f"~{start_value:.2f}",
             (x_data[0], start_value),
             textcoords="offset points",
             xytext=(-23, -3),
             ha="center",
         )
         plt.annotate(
-            f"{final_value:.1f}",
+            f"~{final_value:.2f}",
             (x_data[-1], final_value),
             textcoords="offset points",
             xytext=(25, -3),
@@ -588,8 +538,10 @@ def FRS_vs_metric(df, cov=True):
 
     # Add vertical lines and text annotations
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
+    plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
+    plt.text(0.15, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
 
     # Despine and grid settings
     sns.despine(top=True, right=True)
@@ -614,34 +566,45 @@ def plot_catalogue_counts(df, figsize=(6, 2.5)):
 
     # Count the occurrences of each prediction type per gene
     count_data = df.groupby(["GENE", "PREDICTION"]).size().unstack(fill_value=0)
-
-    colors = {"S": "#e41a1c", "R": "#4daf4a", "U": "#377eb8"}
+    count_data.sort_values(by="R", ascending=True, inplace=True)
+    colors = {"S": "#377eb8", "R": "#e41a1c", "U": "#aaaaaa"}
 
     # Plot the chart
     fig, ax = plt.subplots(figsize=figsize)
     bars = count_data.plot(
         kind="barh",
         stacked=True,
-        color=[colors["R"], colors["S"], colors["U"]],
+        color=[colors["S"], colors["R"], colors["U"]],
         edgecolor="none",
         width=0.8,
+        alpha=0.8,
         ax=ax,
     )
 
     ax.spines["right"].set_visible(False)
     ax.spines["top"].set_visible(False)
-    ax.legend(frameon=False, fontsize="small")
-    ax.set_xlabel("Count")
-    ax.set_ylabel("Gene")
+    # ax.legend(frameon=False, fontsize="small")
+    ax.get_legend().remove()
+    ax.set_xlabel("Number of genetic variants associated with a phenotype")
+    ax.set_ylabel("")
+    ax.set_yticklabels(count_data.index, fontstyle="italic", fontsize=10)
+    ax.set_xticks([0, 50, 100, 150, 200])
+    ax.set_xlim([0, 220])
+    # ax.axes.get_yaxis().set_visible(False)
 
     # Add data labels for R counts
     for i, (gene, row) in enumerate(count_data.iterrows()):
-        if "R" in row:
+        if "R" in row and row["R"] > 0:
             ax.text(
-                row["R"] + 2, i, f'{row["R"]}', va="center", ha="left", color="black"
+                row["R"] + 2, i, f'{row["R"]}', va="center", ha="left", color="#e41a1c"
+            )
+        if "S" in row and row["S"] > 0:
+            ax.text(
+                row["S"] + 2, i, f'{row["S"]}', va="center", ha="left", color="#377eb8"
             )
 
     plt.show()
+    return fig
 
 
 def plot_catalogue_proportions(
@@ -1048,3 +1011,82 @@ def wilson(R, S):
     return pd.Series(
         [proportion, lower, upper], index=["proportion", "lower_bound", "upper_bound"]
     )
+
+
+def plot_stacked_positions_vertical(
+    grouped_counts,
+    all_grouped_positions,
+    colors,
+    high_count_threshold=90,
+    figsize=(20, 8),
+    bar_width=1.5,
+    line_counts=None,
+    line_color="black",
+    line_label="Threshold Line",
+):
+    """
+    Plots stacked bars based on the provided counts and positions with the specified styling.
+
+    Parameters:
+    grouped_counts (dict): Dictionary with legend keys and their corresponding count values (as pandas Series).
+    all_grouped_positions (iterable): Iterable of all grouped codon positions.
+    colors (list): List of colors for the bars, must be the same length as grouped_counts.
+    high_count_threshold (int): Threshold to create an inset for bars with counts above this value.
+    figsize (tuple): Figure size in the format (width, height).
+    bar_width (float): Width of the bars.
+    line_counts (dict): Dictionary with positions as keys and counts as values to draw a line within each bar at the specified count.
+    line_color (str): Color of the lines.
+    line_label (str): Label for the line in the legend.
+    """
+
+    if len(colors) != len(grouped_counts):
+        raise ValueError("The length of colors must match the length of grouped_counts")
+
+    # Create a DataFrame from the grouped counts
+    df = pd.DataFrame(grouped_counts).reindex(all_grouped_positions, fill_value=0)
+
+    print(df[df["Predicted R"] > 50])
+
+    # Plot the data
+    fig, ax = plt.subplots(1, 1, figsize=figsize)
+    df.plot(kind="barh", stacked=True, color=colors, width=bar_width, ax=ax, alpha=0.8)
+
+    ax.set_xlabel("")  # Number of isolates", fontsize=7)
+    ax.set_ylabel("")  # Codon position in Rv0678", fontsize=7)
+    ax.get_legend().remove()
+    ax.tick_params(axis="both", which="major", labelsize=7)
+
+    # Increase the number of x-tick labels
+    ax.set_yticks(range(0, len(all_grouped_positions), 20))
+
+    # ax.set_xticklabels(all_grouped_positions)
+    ax.yaxis.set_tick_params(rotation=0)
+
+    # Set the x-axis limits to remove the gaps
+    ax.set_ylim([0.5, len(all_grouped_positions) - 0.5])
+
+    # Highlight the really long bars
+    mutation_counts_grouped = df.sum(axis=1)
+    high_counts = mutation_counts_grouped[
+        mutation_counts_grouped > high_count_threshold
+    ]
+    ax.set_xlim(0, high_count_threshold)
+
+    # Draw lines within the bars at specified counts for the inset plot
+    if line_counts:
+        for position, count in line_counts.items():
+            if position in high_counts.index:
+                pos_index = high_counts.index.tolist().index(position)
+                ax_inset.plot(
+                    [pos_index - bar_width / 2, pos_index + bar_width / 2],
+                    [count, count],
+                    color=line_color,
+                    linestyle="-",
+                    linewidth=2,
+                )
+
+    # Remove top and right spines from both plots
+    for spine in ["top", "right"]:
+        ax.spines[spine].set_visible(False)
+
+    return (fig, ax)
