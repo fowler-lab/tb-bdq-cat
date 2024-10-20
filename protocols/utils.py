@@ -200,9 +200,9 @@ def confusion_matrix(labels, predictions, classes):
     return cm
 
 
-def plot_truthtables(truth_table, U_to_S=False, figsize=(2.5, 1.5), fontsize=12):
+def plot_truthtables(truth_table, U_to_S=False, fontsize=10, colors=None, save=None):
     """
-    Plots a truth table as a confusion matrix to denote each cell.
+    Plots a truth table as a confusion matrix to denote each cell with perfect squares or proportional rectangles.
 
     Parameters:
     truth_table (pd.DataFrame): DataFrame containing the truth table values.
@@ -211,36 +211,57 @@ def plot_truthtables(truth_table, U_to_S=False, figsize=(2.5, 1.5), fontsize=12)
                                 - Columns: Predicted labels ("R", "S", and optionally "U")
     U_to_S (bool): Whether to separate the "U" values from the "S" column. If True,
                    an additional column for "U" values will be used.
-    figsize (tuple): Figure size for the plot.
     fontsize (int): Font size for the text in the plot.
+    colors (list): List of four colors for the squares. 
+                   Defaults to red and green for the diagonal, pink and green for the off-diagonal.
 
     Returns:
     None
     """
+
+    # Default colors if none provided
+    if colors is None:
+        if U_to_S:
+            colors = ["#e41a1c", "#4daf4a", "#fc9272", "#4daf4a"]
+        else:
+            colors = ["#e41a1c", "#4daf4a", "#fc9272", "#4daf4a", "#4daf4a", "#4daf4a"]
+
+    
+    # Determine the number of columns for U_to_S condition
+    num_columns = 3 if not U_to_S else 2
+    num_rows = 2
+    
+    # Adjust the figure size to ensure square cells
+    figsize = (num_columns/1.8, num_rows/1.8) if num_columns == 2 else (num_columns * 1.5/1.8, num_rows/1.8)
+
     fig = plt.figure(figsize=figsize)
     axes = plt.gca()
 
     if not U_to_S:
-        axes.add_patch(Rectangle((2, 0), 1, 1, fc="#377eb8", alpha=0.5))
-        axes.add_patch(Rectangle((2, 1), 1, 1, fc="#377eb8", alpha=0.5))
+        assert len(colors) == 6, 'The length of supplied colors must be 6, one for each cell'
+        axes.add_patch(Rectangle((2, 0), 1, 1, fc=colors[4], alpha=0.5))
+        axes.add_patch(Rectangle((2, 1), 1, 1, fc=colors[5], alpha=0.5))
 
         axes.set_xlim([0, 3])
         axes.set_xticks([0.5, 1.5, 2.5])
-        axes.set_xticklabels(["S", "R", "U"], fontsize=fontsize)
+        axes.set_xticklabels(["S", "R", "U"],)
     else:
+        assert len(colors) == 4, 'The length of supplied colors must be 4, one for each cell'
         axes.set_xlim([0, 2])
         axes.set_xticks([0.5, 1.5])
-        axes.set_xticklabels(["S+U", "R"], fontsize=fontsize)
+        axes.set_xticklabels(["S+U", "R"],)
 
-    axes.add_patch(Rectangle((0, 0), 1, 1, fc="#e41a1c", alpha=0.7))
-    axes.add_patch(Rectangle((1, 0), 1, 1, fc="#4daf4a", alpha=0.7))
-    axes.add_patch(Rectangle((1, 1), 1, 1, fc="#fc9272", alpha=0.7))
-    axes.add_patch(Rectangle((0, 1), 1, 1, fc="#4daf4a", alpha=0.7))
+    # Apply provided colors for the squares
+    axes.add_patch(Rectangle((0, 0), 1, 1, fc=colors[0], alpha=0.8))
+    axes.add_patch(Rectangle((1, 0), 1, 1, fc=colors[1], alpha=0.8))
+    axes.add_patch(Rectangle((1, 1), 1, 1, fc=colors[2], alpha=0.8))
+    axes.add_patch(Rectangle((0, 1), 1, 1, fc=colors[3], alpha=0.8))
 
     axes.set_ylim([0, 2])
     axes.set_yticks([0.5, 1.5])
-    axes.set_yticklabels(["R", "S"], fontsize=fontsize)
+    axes.set_yticklabels(["R", "S"],)
 
+    # Add text to the plot
     axes.text(
         1.5,
         0.5,
@@ -292,7 +313,13 @@ def plot_truthtables(truth_table, U_to_S=False, figsize=(2.5, 1.5), fontsize=12)
             fontsize=fontsize,
         )
 
+    axes.set_aspect('equal')  # Ensure squares remain squares
+
+    if save != None:
+        plt.savefig(save, format="pdf", bbox_inches="tight")
+
     plt.show()
+
 
 
 def compare_metrics(performance_comparison, figsize=(8, 6)):
@@ -433,7 +460,7 @@ def str_to_dict(s):
 
 
 def plot_tricolour_venn(
-    subsets, labels, figsize=(8, 6), x_offsets=(0.03, 0.03), y_offsets=(-0.045, -0.01)
+    subsets, labels, x_offsets=(0.03, 0.03), y_offsets=(-0.045, -0.01)
 ):
     """
     Generates a tricolour Venn diagram for variants present in two different groups.
@@ -453,7 +480,6 @@ def plot_tricolour_venn(
     Returns:
     None
     """
-    plt.figure(figsize=figsize)
     v = venn2(subsets=subsets, set_labels=labels)
     v.get_patch_by_id("10").set_color("#1b9e77")  # Color for WHO only
     v.get_patch_by_id("01").set_color("#7570b3")  # Color for MMM only
@@ -492,11 +518,11 @@ def FRS_vs_metric(df, cov=True):
     None
 
     """
-    plt.figure(figsize=(8, 4))
+    plt.figure(figsize=(6.69, 2))
 
     # Plot Sensitivity and Specificity
-    sns.lineplot(x="FRS", y="Sensitivity", data=df, label="Sensitivity", color="blue")
-    sns.lineplot(x="FRS", y="Specificity", data=df, label="Specificity", color="red")
+    sns.lineplot(x="FRS", y="Sensitivity", data=df, label="Sensitivity", color="#e41a1c")
+    sns.lineplot(x="FRS", y="Specificity", data=df, label="Specificity", color="#377eb8")
 
     # Plot Coverage if specified
     if cov:
@@ -512,7 +538,7 @@ def FRS_vs_metric(df, cov=True):
 
     # Add labels and legend
     plt.xlabel("Fraction Read Support (FRS)")
-    plt.ylabel("Metric (%)")
+    plt.ylabel("%")
     plt.legend(loc="best", frameon=False, bbox_to_anchor=(0.85, 0.40))
 
     # Annotate the start and end values
@@ -522,31 +548,29 @@ def FRS_vs_metric(df, cov=True):
         start_value = y_data[0]
         final_value = y_data[-1]
         plt.annotate(
-            f"~{start_value:.2f}",
+            f"{start_value:.1f}",
             (x_data[0], start_value),
             textcoords="offset points",
-            xytext=(-23, -3),
+            xytext=(-17, -3),
             ha="center",
         )
         plt.annotate(
-            f"~{final_value:.2f}",
+            f"{final_value:.1f}",
             (x_data[-1], final_value),
             textcoords="offset points",
-            xytext=(25, -3),
+            xytext=(17, -3),
             ha="center",
         )
 
     # Add vertical lines and text annotations
     plt.axvline(x=0.75, color="gray", linestyle="--", label="FRS=0.75")
-    plt.text(0.68, 30, "WHOv2 build threshold", color="gray", ha="left", va="top")
 
     plt.axvline(x=0.25, color="gray", linestyle="--", label="FRS=0.25")
-    plt.text(0.15, 30, "WHOv2 evaluation threshold", color="gray", ha="left", va="top")
 
     # Despine and grid settings
     sns.despine(top=True, right=True)
     plt.grid(False)
-
+    plt.tight_layout()
     # Show plot
     plt.ylim(40, 100)
     plt.show()
@@ -587,7 +611,7 @@ def plot_catalogue_counts(df, figsize=(6, 2.5)):
     ax.get_legend().remove()
     ax.set_xlabel("Number of genetic variants associated with a phenotype")
     ax.set_ylabel("")
-    ax.set_yticklabels(count_data.index, fontstyle="italic", fontsize=10)
+    ax.set_yticklabels(count_data.index, fontstyle="italic")
     ax.set_xticks([0, 50, 100, 150, 200])
     ax.set_xlim([0, 220])
     # ax.axes.get_yaxis().set_visible(False)
