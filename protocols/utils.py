@@ -8,6 +8,11 @@ from matplotlib_venn import venn2
 from matplotlib.patches import Rectangle
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
+plt.rcParams['figure.dpi']=250
+plt.rcParams['font.family'] = 'Helvetica'  
+plt.rcParams['font.size'] = 7
+plt.rcParams['figure.figsize']= (6.69, 5.02)
+
 
 PHENOTYPE = "PHENOTYPE"
 UNIQUEID = "UNIQUEID"
@@ -708,19 +713,9 @@ def plot_catalogue_proportions(
                 )
 
         ax.set_yticks(np.arange(len(df2)))
-        ax.set_yticklabels([i if len(i) < 20 else i[:20] for i in df2["Mutation"]])
-        ax.set_title(title)
-        for item in ax.get_yticklabels():
-            if figsize is None:
-                item.set_fontsize(7)
-            else:
-                item.set_fontsize(9)
+        ax.set_yticklabels([i if len(i) < 20 else i[:15] for i in df2["Mutation"]])
 
-        for item in [ax.xaxis.label, ax.yaxis.label] + ax.get_xticklabels():
-            item.set_fontsize(9)
-
-        plt.xlabel("proportion resistant")
-        # plt.ylabel("mutation")
+        plt.xlabel("Proportion Resistant")
         plt.tight_layout()
         plt.xlim(-0.05, 1.05)
         ax.set_ylim(-0.5, len(df2) - 0.5)  # Adjust y-axis limits to fit the data
