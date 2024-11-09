@@ -8,10 +8,10 @@ from matplotlib_venn import venn2
 from matplotlib.patches import Rectangle
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
-plt.rcParams['figure.dpi']=250
-plt.rcParams['font.family'] = 'Helvetica'  
-plt.rcParams['font.size'] = 7
-plt.rcParams['figure.figsize']= (6.69, 5.02)
+plt.rcParams["figure.dpi"] = 250
+plt.rcParams["font.family"] = "Helvetica"
+plt.rcParams["font.size"] = 7
+plt.rcParams["figure.figsize"] = (6.69, 5.02)
 
 
 PHENOTYPE = "PHENOTYPE"
@@ -217,7 +217,7 @@ def plot_truthtables(truth_table, U_to_S=False, fontsize=10, colors=None, save=N
     U_to_S (bool): Whether to separate the "U" values from the "S" column. If True,
                    an additional column for "U" values will be used.
     fontsize (int): Font size for the text in the plot.
-    colors (list): List of four colors for the squares. 
+    colors (list): List of four colors for the squares.
                    Defaults to red and green for the diagonal, pink and green for the off-diagonal.
 
     Returns:
@@ -231,30 +231,37 @@ def plot_truthtables(truth_table, U_to_S=False, fontsize=10, colors=None, save=N
         else:
             colors = ["#e41a1c", "#4daf4a", "#fc9272", "#4daf4a", "#4daf4a", "#4daf4a"]
 
-    
     # Determine the number of columns for U_to_S condition
     num_columns = 3 if not U_to_S else 2
     num_rows = 2
-    
+
     # Adjust the figure size to ensure square cells
-    figsize = (num_columns/1.8, num_rows/1.8) if num_columns == 2 else (num_columns * 1.5/1.8, num_rows/1.8)
+    figsize = (
+        (num_columns / 1.8, num_rows / 1.8)
+        if num_columns == 2
+        else (num_columns * 1.5 / 1.8, num_rows / 1.8)
+    )
 
     fig = plt.figure(figsize=figsize)
     axes = plt.gca()
 
     if not U_to_S:
-        assert len(colors) == 6, 'The length of supplied colors must be 6, one for each cell'
+        assert (
+            len(colors) == 6
+        ), "The length of supplied colors must be 6, one for each cell"
         axes.add_patch(Rectangle((2, 0), 1, 1, fc=colors[4], alpha=0.5))
         axes.add_patch(Rectangle((2, 1), 1, 1, fc=colors[5], alpha=0.5))
 
         axes.set_xlim([0, 3])
         axes.set_xticks([0.5, 1.5, 2.5])
-        axes.set_xticklabels(["S", "R", "U"],)
+        axes.set_xticklabels(["S", "R", "U"], fontsize=9)
     else:
-        assert len(colors) == 4, 'The length of supplied colors must be 4, one for each cell'
+        assert (
+            len(colors) == 4
+        ), "The length of supplied colors must be 4, one for each cell"
         axes.set_xlim([0, 2])
         axes.set_xticks([0.5, 1.5])
-        axes.set_xticklabels(["S+U", "R"],)
+        axes.set_xticklabels(["S+U", "R"], fontsize=9)
 
     # Apply provided colors for the squares
     axes.add_patch(Rectangle((0, 0), 1, 1, fc=colors[0], alpha=0.8))
@@ -264,7 +271,7 @@ def plot_truthtables(truth_table, U_to_S=False, fontsize=10, colors=None, save=N
 
     axes.set_ylim([0, 2])
     axes.set_yticks([0.5, 1.5])
-    axes.set_yticklabels(["R", "S"],)
+    axes.set_yticklabels(["R", "S"], fontsize=9)
 
     # Add text to the plot
     axes.text(
@@ -318,13 +325,12 @@ def plot_truthtables(truth_table, U_to_S=False, fontsize=10, colors=None, save=N
             fontsize=fontsize,
         )
 
-    axes.set_aspect('equal')  # Ensure squares remain squares
+    axes.set_aspect("equal")  # Ensure squares remain squares
 
     if save != None:
         plt.savefig(save, format="pdf", bbox_inches="tight")
 
     plt.show()
-
 
 
 def compare_metrics(performance_comparison, figsize=(8, 6)):
@@ -526,8 +532,12 @@ def FRS_vs_metric(df, cov=True):
     plt.figure(figsize=(6.69, 2))
 
     # Plot Sensitivity and Specificity
-    sns.lineplot(x="FRS", y="Sensitivity", data=df, label="Sensitivity", color="#e41a1c")
-    sns.lineplot(x="FRS", y="Specificity", data=df, label="Specificity", color="#377eb8")
+    sns.lineplot(
+        x="FRS", y="Sensitivity", data=df, label="Sensitivity", color="#e41a1c"
+    )
+    sns.lineplot(
+        x="FRS", y="Specificity", data=df, label="Specificity", color="#377eb8"
+    )
 
     # Plot Coverage if specified
     if cov:
