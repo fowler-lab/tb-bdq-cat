@@ -1,5 +1,5 @@
 ,GENBANK_REFERENCE,CATALOGUE_NAME,CATALOGUE_VERSION,CATALOGUE_GRAMMAR,PREDICTION_VALUES,DRUG,MUTATION,PREDICTION,SOURCE,EVIDENCE,OTHER
-0,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@c-11a,S,{},"[{""proportion"": 0.08823529411764706, ""confidence"": [0.04711555975757313, 0.15924458553951418], ""p_value"": 0.002871220392170212, ""contingency"": [[9, 93], [136, 10372]]}]",{}
+0,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@c-11a,S,{},"[{""proportion"": 0.08823529411764706, ""confidence"": [0.04711555975757313, 0.15924458553951418], ""p_value"": 0.0028712203921702102, ""contingency"": [[9, 93], [136, 10372]]}]",{}
 1,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,pepQ@F46L,S,{},"[{""proportion"": 0.0, ""confidence"": [0.0, 0.17587922364665765], ""p_value"": 0.0342945392778281, ""contingency"": [[0, 18], [136, 10372]]}]",{}
 2,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,pepQ@V45L,S,{},"[{""proportion"": 0.0, ""confidence"": [0.0, 0.1843181350088518], ""p_value"": 0.03345231337095167, ""contingency"": [[0, 17], [136, 10372]]}]",{}
 3,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,pepQ@G197R,S,{},"[{""proportion"": 0.0, ""confidence"": [0.0, 0.1071791982550706], ""p_value"": 0.0013533061470821302, ""contingency"": [[0, 32], [136, 10372]]}]",{}
@@ -8,7 +8,7 @@
 330,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,mmpS5@*=,S,{},"{""default_rule"": ""True""}",{}
 336,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,mmpL5@*=,S,{},"{""default_rule"": ""True""}",{}
 342,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,atpE@*=,S,{},"{""default_rule"": ""True""}",{}
-9,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@192_ins_g,R,{},"[{""proportion"": 0.4230769230769231, ""confidence"": [0.31959060348175483, 0.533784444166275], ""p_value"": 6.5943537723516656e-06, ""contingency"": [[33, 45], [145, 10532]]}]",{}
+9,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@192_ins_g,R,{},"[{""proportion"": 0.4230769230769231, ""confidence"": [0.31959060348175483, 0.533784444166275], ""p_value"": 6.594353772351666e-06, ""contingency"": [[33, 45], [145, 10532]]}]",{}
 16,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@I67L,R,{},"[{""proportion"": 1.0, ""confidence"": [0.3423802275066531, 1.0], ""p_value"": 0.04000000000000001, ""contingency"": [[2, 0], [145, 10532]]}]",{}
 32,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@Q115!,R,{},"[{""proportion"": 0.8, ""confidence"": [0.37553462976252533, 0.9637758913675698], ""p_value"": 0.006720000000000001, ""contingency"": [[4, 1], [145, 10532]]}]",{}
 36,NC_000962.3,BDQ-BG-20-2024.06,1.1,GARC1,RUS,BDQ,Rv0678@465_ins_c,R,{},"[{""proportion"": 0.75, ""confidence"": [0.3006418425824019, 0.9544127391902995], ""p_value"": 0.027200000000000005, ""contingency"": [[3, 1], [145, 10532]]}]",{}
