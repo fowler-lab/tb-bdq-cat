@@ -10,7 +10,7 @@ from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 plt.rcParams["figure.dpi"] = 250
 plt.rcParams["font.family"] = "Helvetica"
-plt.rcParams["font.size"] = 7
+plt.rcParams["font.size"] = 9
 plt.rcParams["figure.figsize"] = (6.69, 5.02)
 
 
@@ -529,7 +529,7 @@ def FRS_vs_metric(df, cov=True):
     None
 
     """
-    plt.figure(figsize=(6.69, 2))
+    plt.figure(figsize=(6.69, 2.5))
 
     # Plot Sensitivity and Specificity
     sns.lineplot(
@@ -542,7 +542,7 @@ def FRS_vs_metric(df, cov=True):
     # Plot Coverage if specified
     if cov:
         sns.lineplot(
-            x="FRS", y="Coverage", data=df, label="Isolate Coverage", color="green"
+            x="FRS", y="Coverage", data=df, label="Coverage", color="green"
         )
 
     # Set x and y ticks
@@ -587,7 +587,7 @@ def FRS_vs_metric(df, cov=True):
     plt.grid(False)
     plt.tight_layout()
     # Show plot
-    plt.ylim(40, 100)
+    plt.ylim(75, 100)
     plt.show()
 
 
