@@ -662,7 +662,7 @@ def plot_catalogue_proportions(
     """
     rows = []
     for mutation, details in catalogue.items():
-        evid = details["evid"][0]
+        evid = details["evid"]
         rows.append(
             {
                 "Mutation": mutation,
