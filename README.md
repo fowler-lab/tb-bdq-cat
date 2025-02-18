@@ -4,16 +4,12 @@ This repository contains all data used and all figures generated in the study to
 
 ---
 
-The results of the study can be found in the storyboard.ipynb notebook, presented in a similar order and structure as in the paper.
+The methods.ipynb, results.ipynb, and supplement.ipynb notebooks correspond to the methods, sections, and supplementary sections in the manuscript. Notebook cells are presented in a similar order and structure as the manuscript.
 
 ---
 
-All generated catalogues can be found in the catalogues folder and can all be parsed by Piezo. Those built at varying FRS thresholds and containing all BDQ candidate genes are named accordingly. i.e The catalogue built at FRS = 0.25 is catalogue_FRS_25.csv. Metadata includes the R, S, and background counts used in the Fisher test. Catalogues built using cross validation are in the cv directory, and catalogues built without mmpL5 and mmpS5 exist in the rem_mmpL5 directory.
+All generated catalogues can be found in the catalogues folder and can all be parsed by Piezo. Catalogue naming (ie catomatic_1.csv) correspond to the catalogue names in the manuscript, and can be cross referenced.
 
 ---
 
-The catalogue building psuedo-heuristic algorithm can be found in protocols/BuildCatalogue.py.
-
----
-
-Predictions using piezo require functions in protocols/Predict.py
+All data used to build and test the catalogues can be found in data/.
