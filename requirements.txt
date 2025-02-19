@@ -1,0 +1,7 @@
+pandas
+scikit-learn
+matplotlib
+seaborn
+matplotlib-venn
+ipykernel
+catomatic
