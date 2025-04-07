@@ -37,3 +37,7 @@ All generated catalogues can be found in the catalogues folder and can all be pa
 ---
 
 All data used to build and test the catalogues can be found in the `data/` directory.
+
+---
+
+While `results.ipynb` does itself act as a demo on how to use `catomatic's` Python interface, a dedicated demo notebook can also be found in the package repository, and a CLI demo in the repository's readme (`github.com/fowlerlab/catomatic`).

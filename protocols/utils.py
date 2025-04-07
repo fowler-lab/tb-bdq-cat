@@ -671,6 +671,7 @@ def plot_catalogue_proportions(
                 "Upper_bound": evid["confidence"][1],
                 "Interval": evid["confidence"][1] - evid["confidence"][0],
                 "Background": background,
+                "Counts": evid['contingency'][0][0] + evid['contingency'][0][1]
             }
         )
     df = pd.DataFrame(rows)
@@ -721,13 +722,22 @@ def plot_catalogue_proportions(
                 ax.axvline(
                     x=df2["Background"].iloc[i], color="red", linestyle="--", lw=1
                 )
+            count = df2["Counts"].iloc[i]
+            ax.text(
+                1.02,  # x-position (just outside plot bounds)
+                i,     # y-position aligned with the bar
+                str(count),
+                va="center",
+                ha="left",
+                fontsize=6
+            )
 
         ax.set_yticks(np.arange(len(df2)))
-        ax.set_yticklabels([i if len(i) < 20 else i[:15] for i in df2["Mutation"]])
-
-        plt.xlabel("Proportion Resistant")
+        ax.set_yticklabels([i if len(i) < 20 else i[:15] for i in df2["Mutation"]], fontsize=7)
+        ax.tick_params(axis='x', labelsize=7)  # or any size you prefer
+        plt.xlabel("Proportion Resistant", fontsize=7)
         plt.tight_layout()
-        plt.xlim(-0.05, 1.05)
+        plt.xlim(-0.05, 1.1)
         ax.set_ylim(-0.5, len(df2) - 0.5)  # Adjust y-axis limits to fit the data
         sns.despine()
         figures.append(fig)
