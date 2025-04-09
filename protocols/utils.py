@@ -517,13 +517,13 @@ def plot_tricolour_venn(
 
 def FRS_vs_metric(df, cov=True):
     """
-    Plots a comparison of performance metrics (Sensitivity, Specificity, and optionally Coverage)
+    Plots a comparison of performance metrics (Sensitivity, Specificity, and optionally DPR)
     against Fraction Read Support (FRS).
 
     Parameters:
     df (pandas.DataFrame): DataFrame containing the performance metrics with columns "FRS",
-                           "Sensitivity", "Specificity", and optionally "Coverage".
-    cov (bool): If True, includes Coverage in the plot. Defaults to True.
+                           "Sensitivity", "Specificity", and optionally "DPR".
+    cov (bool): If True, includes DPR in the plot. Defaults to True.
 
     Returns:
     None
@@ -539,10 +539,10 @@ def FRS_vs_metric(df, cov=True):
         x="FRS", y="Specificity", data=df, label="Specificity", color="#377eb8"
     )
 
-    # Plot Coverage if specified
+    # Plot DPR if specified
     if cov:
         sns.lineplot(
-            x="FRS", y="Coverage", data=df, label="Coverage", color="green"
+            x="FRS", y="DPR", data=df, label="DPR", color="green"
         )
 
     # Set x and y ticks
@@ -843,13 +843,13 @@ def mic_to_float(arr):
 
 def background_vs_metric(df, cov=True):
     """
-    Plots a comparison of performance metrics (Sensitivity, Specificity, and optionally Coverage)
+    Plots a comparison of performance metrics (Sensitivity, Specificity, and optionally DPR)
     against a defined background rage.
 
     Parameters:
     df (pandas.DataFrame): DataFrame containing the performance metrics with columns "Background",
-                           "Sensitivity", "Specificity", and optionally "Coverage".
-    cov (bool): If True, includes Coverage in the plot. Defaults to True.
+                           "Sensitivity", "Specificity", and optionally "DPR".
+    cov (bool): If True, includes DPR in the plot. Defaults to True.
 
     Returns:
     None
@@ -865,13 +865,13 @@ def background_vs_metric(df, cov=True):
         x="Background", y="Specificity", data=df, label="Specificity", color="red"
     )
 
-    # Plot Coverage if specified
+    # Plot DPR if specified
     if cov:
         sns.lineplot(
             x="Background",
-            y="Coverage",
+            y="DPR",
             data=df,
-            label="Isolate Coverage",
+            label="Isolate DPR",
             color="green",
         )
 

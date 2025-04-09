@@ -22,10 +22,10 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
     drug (str): The drug for which resistance predictions are to be made.
     U_to_R (bool, optional): If True, treat 'U' predictions as 'R'. Defaults to False.
     U_to_S (bool, optional): If True, treat 'U' predictions as 'S'. Defaults to False.
-    Print (bool, optional): If True, prints the confusion matrix, coverage, sensitivity, and specificity. Defaults to True.
+    Print (bool, optional): If True, prints the confusion matrix, DPR, sensitivity, and specificity. Defaults to True.
 
     Returns:
-    list: Confusion matrix, isolate coverage, sensitivity, specificity, and false negative IDs.
+    list: Confusion matrix, DPR, sensitivity, specificity, and false negative IDs.
     """
     # Load and parse the catalogue with piezo
     catalogue = piezo.ResistanceCatalogue(catalogue_file)
@@ -93,7 +93,7 @@ def piezo_predict(iso_df, catalogue_file, drug, U_to_R=False, U_to_S=False, Prin
     isolate_cov = (len(labels) - predictions.count("U")) / len(labels)
 
     if Print:
-        print("Catalogue coverage of isolates:", isolate_cov)
+        print("Definitive Prediction Rate:", isolate_cov)
         print("Sensitivity:", sensitivity)
         print("Specificity:", specificity)
 
